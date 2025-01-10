@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function showContent(sectionId) {
+    const thumbnail = document.querySelector('.content .img');
     const sections = document.querySelectorAll('.content-section');
     sections.forEach(section => {
         section.style.display = 'none';
@@ -87,6 +88,8 @@ function showContent(sectionId) {
     
     const selectedSection = document.getElementById(sectionId);
     if (selectedSection) {
-        selectedSection.style.display = 'block';
+        thumbnail.style.display = 'none';  
+        selectedSection.style.display = 'block';    
+        
     }
 }
