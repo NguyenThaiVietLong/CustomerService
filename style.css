@@ -328,15 +328,11 @@ section {
 }
 
 .content2 img {
-    width: 60%;
+    width: 70%;
     height: auto;
     padding-bottom:30px;
 }
-.content21 img {
-    width: 60%;
-    height: 500px;
-    padding-bottom:30px;
-}
+
 /* #cause4, #cause7, #cause8, #cause10, #cause18 img{
     height:500px;    
 } */
@@ -365,6 +361,23 @@ section {
     text-align: center;
     color:#3a3535;
     font-size:17px;
+}
+
+.content21 {
+    display: flex;
+    flex-direction: row;  /* Giữ các dòng ảnh theo cột */
+     /* Căn giữa nội dung */
+    gap: 20px;  /* Khoảng cách giữa các dòng */
+    padding:10px 80px 10px 80px;
+}
+
+.content21 img {
+    width: 100%;
+    height: 600px;
+    padding-bottom:30px;
+}
+.image-row{
+    padding: 0px 20px 0px 20px;
 }
 
 
