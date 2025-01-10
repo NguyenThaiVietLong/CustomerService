@@ -23,20 +23,21 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             
             const sectionId = this.getAttribute('data-section');
-            console.log('Section ID:', sectionId)
+            
             
         
 
             // Xử lý click vào issues
             if (sectionId) {
                 const selectedSection = document.getElementById(sectionId);
-               
+                const thumbnail = document.querySelector('.content .img');
                 const isVisible = selectedSection && selectedSection.style.display === 'block';
                 // console.log(isVisible)
 
                 // Đóng tab nếu nó đang mở
                 if (isVisible) {
                     selectedSection.style.display = 'none';
+                    thumbnail.style.display = 'block'; 
                     // Ẩn tất cả causes menu trước
                     causeMenus.forEach(menu => menu.style.display = 'none');
                 } else {
@@ -84,12 +85,14 @@ function showContent(sectionId) {
     const sections = document.querySelectorAll('.content-section');
     sections.forEach(section => {
         section.style.display = 'none';
+         
     });
     
     const selectedSection = document.getElementById(sectionId);
-    if (selectedSection) {
+    
         thumbnail.style.display = 'none';  
-        selectedSection.style.display = 'block';    
-        
+        selectedSection.style.display = 'block';   
+
+
+    
     }
-}
