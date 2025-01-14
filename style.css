@@ -54,7 +54,12 @@ body {
 }
 
 .menu h3 {
-    margin-top: 20px;
+    
+    color: #333;
+}
+
+.menu h2 {
+    
     color: #333;
 }
 
@@ -116,7 +121,7 @@ h1 {
 
 h2 {
     color: #173de7;
-    /* margin-bottom: 5px; */
+    margin-top: 20px;
     font-size:20px;
 }
 
@@ -165,12 +170,10 @@ section {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* .problem-details {
-    /* margin-top: 20px; */
-} */
+
 
 .problem-details h3 {
-    color: #2c3e50;
+    /* color: #2c3e50; */
     
     /* padding-bottom: 5px; */
     border-bottom: 2px solid #eee;
@@ -484,3 +487,8 @@ img {
 }
 
 
+.border-menu
+{
+    border: #8f8a8a 0.5px groove;
+    padding:3px;
+}
