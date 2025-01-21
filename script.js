@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const submenu = this.nextElementSibling;
                 if (submenu && submenu.classList.contains('submenu')) {
                     // Nếu là wifi-slow hoặc wifi-cant-use, chỉ toggle submenu
-                    if (['wifi-slow', 'wifi-cant-use', 'wifi-bandwidth','box-nopower','box-nosignal','box-nointernet','device-information','user-guide' ].includes(sectionId)) {
+                    if (['wifi-slow', 'wifi-cant-use', 'wifi-bandwidth','box-nopower','box-nosignal','box-nointernet','device-information','user-guide','training-camera' ].includes(sectionId)) {
                         // Ẩn tất cả submenu khác cùng cấp
                         const siblingSubmenus = this.closest('ul').querySelectorAll('.submenu');
                         siblingSubmenus.forEach(sub => {

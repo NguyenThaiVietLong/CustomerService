@@ -20,10 +20,13 @@ body {
     width: 300px;
     background-color: #f5f5f5;
     
-    padding: 5px 20px 20px 20px;
+    padding: 5px 0px 20px 20px;
     position: fixed;
     height: 100vh;
-    overflow-y: auto;
+    /* overflow-y: auto; */
+
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
 }
 
 .content {
@@ -122,7 +125,7 @@ h1 {
 
 h2 {
     color: #173de7;
-    margin-top: 20px;
+    
     font-size:20px;
 }
 
@@ -195,7 +198,7 @@ section {
 /* Thêm hiệu ứng hover cho các link trong sidebar */
 .menu ul li a {
     display: block;
-    padding: 5px 0;
+   
     color:#002bb8; 
     transition: all 0.3s ease;
     text-decoration: none;
@@ -491,5 +494,40 @@ img {
 .border-menu
 {
     border: #8f8a8a 0.5px groove;
-    padding:3px;
+    
+}
+
+.footer
+{
+    margin-top: auto; /* Đẩy phần footer xuống dưới cùng */
+    text-align: center; /* Canh giữa nội dung nếu cần */
+    font-weight: bold; /* Tùy chọn: làm nổi bật */
+    padding: 40px 0px 0px 0px; /* Khoảng cách trong footer */
+    
+}
+
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Khoảng cách giữa các logo */
+}
+
+.social-icon i {
+    width: 30px; /* Kích thước logo */
+    height: 30px;
+    transition: transform 0.3s; /* Hiệu ứng khi hover */
+    
+}
+
+.fa-tiktok {
+    color: #000;
+}
+.fa-youtube-play{
+    color:red;
+}
+
+.social-icon img:hover {
+    transform: scale(1.2); /* Phóng to khi hover */
+    cursor: pointer;
 }
