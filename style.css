@@ -22,8 +22,8 @@ body {
     
     padding: 5px 0px 20px 20px;
     position: fixed;
-    height: 100vh;
-    /* overflow-y: auto; */
+    height: 103vh;
+    overflow-y: auto;
 
     display: flex;
     flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
@@ -120,13 +120,13 @@ body {
 
 h1 {
     color: #333;
-    /* margin-bottom: 20px; */
+    font-size:18px;
 }
 
 h2 {
     color: #173de7;
     
-    font-size:20px;
+    font-size:15px;
 }
 
 h3 {
@@ -202,6 +202,8 @@ section {
     color:#002bb8; 
     transition: all 0.3s ease;
     text-decoration: none;
+    padding-right:5px;
+    font-size: 12px;
     
 }
 
@@ -210,6 +212,7 @@ section {
    color:#fff;
    padding:5px;
    border-radius: 10px;
+   
     
 }
 
@@ -494,6 +497,7 @@ img {
 .border-menu
 {
     border: #8f8a8a 0.5px groove;
+    margin-right: 20px;
     
 }
 
@@ -502,12 +506,19 @@ img {
     margin-top: auto; /* Đẩy phần footer xuống dưới cùng */
     text-align: center; /* Canh giữa nội dung nếu cần */
     font-weight: bold; /* Tùy chọn: làm nổi bật */
-    padding: 40px 0px 0px 0px; /* Khoảng cách trong footer */
+    margin-right: 20px;
+     /* Khoảng cách trong footer */
+    
+}
+.footer p
+{
+    margin-top:5px;
+    font-size: 13px;
     
 }
 
 .social-links {
-    margin-top: 10px;
+    
     display: flex;
     justify-content: center;
     gap: 15px; /* Khoảng cách giữa các logo */
