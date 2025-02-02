@@ -40,7 +40,8 @@ body {
     background-color: #eee;
     padding:10px;
     border-radius: 10px;
-
+    font-size: 14px;
+    margin-top: 5px;
 }
 .content a {
     text-decoration:none;
@@ -191,7 +192,8 @@ section {
 .problem-details li {
     /* margin: 5px 0; */
     line-height: 1.6;
-    font-size:17px;
+    font-size:15px;
+    text-align: justify;
 }
 
 
@@ -225,9 +227,8 @@ section {
 
 /* Style cho active link */
 .menu a.active {
-     color: #2980b9; */
+     color: #2980b9;
     font-weight: bold;
-
 }
 
 
@@ -335,6 +336,7 @@ section {
     .problem-details {
         margin-top: 15px;
     }
+    
 }
 
 .content2 img {
@@ -415,6 +417,7 @@ img {
 }
 .entry p{
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .box.shadow {
@@ -446,6 +449,7 @@ img {
 
 .entry ol li {
     list-style: outside decimal;
+    text-align: justify;
 }
 
 .entry li {
@@ -466,7 +470,7 @@ img {
 {
     padding:5px;
 
-    font-size:18px;
+    font-size:16px;
     
     color:#36b;
 }
@@ -475,7 +479,7 @@ img {
 }
 .content1{
     padding:10px;
-    margin:5px;
+    /* margin:5px; */
     
 }
 .sidebar img {
@@ -542,3 +546,43 @@ img {
     transform: scale(1.2); /* Phóng to khi hover */
     cursor: pointer;
 }
+
+/* Camera */
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    gap: 10px; /* Adjust the gap between columns as needed */
+}
+
+.problem-image img {
+    width: 60%; /* Make the image responsive */
+    height: 500px;
+    padding-top: 20px;
+     
+}
+.problem-image .content21
+{
+    padding:10px 50px 10px 10px;
+}
+#cause56 .problem-image img{
+    width:90%;
+}
+#cause58 .problem-image img
+{
+    width:100%;
+    height:300px;
+}
+#cause59 .problem-image img
+{
+    width:100%;
+    height:300px;
+}
+
+/* Wifi 6 */
+.content2 p
+{
+    text-align: justify;
+    font-size: 13px;
+}
+

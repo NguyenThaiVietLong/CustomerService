@@ -89,9 +89,16 @@ function showContent(sectionId) {
     });
     
     const selectedSection = document.getElementById(sectionId);
+    if (selectedSection) {
+        console.log('Section found:', sectionId);
+        selectedSection.style.display = 'block';
+    } else {
+        console.error('Section not found:', sectionId);
+    }
     
-        thumbnail.style.display = 'none';  
-        selectedSection.style.display = 'block';   
+    if (thumbnail) {
+        thumbnail.style.display = 'none';
+    }
 
 
     
