@@ -13,14 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const submenus = document.querySelectorAll('.submenu');
     submenus.forEach(submenu => submenu.style.display = 'none');
 
-   
-
-
     // Thêm event listener cho tất cả các menu items
     const menuItems = document.querySelectorAll('.menu a');
     menuItems.forEach(item => {
         item.addEventListener('click', function(e) {
-            e.preventDefault();
+            // e.preventDefault();
             
             const sectionId = this.getAttribute('data-section');
             
@@ -89,9 +86,16 @@ function showContent(sectionId) {
     });
     
     const selectedSection = document.getElementById(sectionId);
+    if (selectedSection) {
+        console.log('Section found:', sectionId);
+        selectedSection.style.display = 'block';
+    } else {
+        console.error('Section not found:', sectionId);
+    }
     
-        thumbnail.style.display = 'none';  
-        selectedSection.style.display = 'block';   
+    if (thumbnail) {
+        thumbnail.style.display = 'none';
+    }
 
 
     
