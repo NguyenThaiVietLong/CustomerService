@@ -92,6 +92,7 @@ function showContent(sectionId) {
     const sections = document.querySelectorAll('.content-section');
     const rightPanel = document.querySelector('.right-panel');
     const leftPanel = document.querySelector('.left-panel');
+    const rightPanelSections = ['cause1', 'cause2', 'cause3'];
     
     sections.forEach(section => {
         if (section.id !== "wifi-slow") {
@@ -117,7 +118,7 @@ function showContent(sectionId) {
     // rightPanel.style.width = '70%'
     // rightPanel.style.display = 'block';
 
-    if (sectionId === 'cause1' && !isVisible) {
+    if (rightPanelSections.includes(sectionId) && !isVisible) {
         leftPanel.style.width = '30%';
         rightPanel.style.width = '70%';
         rightPanel.style.display = 'block';
