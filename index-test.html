@@ -1,0 +1,2461 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hướng dẫn xử lý sự cố</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a0f1c55686.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        
+        <!-- <img src="https://ho.mypt.vn/assets/images/logo-login.svg"> -->
+      
+        <div class="menu">
+
+          <h2>Tra cứu thông tin</h2>
+          <div class="border-menu">
+          <ul>
+            <li>
+              <a href="#" data-section="device-information">1. Thông tin thiết bị</a>
+              <ul class="submenu">
+                <li>
+                  <a href="#" data-section="device-information1">1.1 Wifi 5</a>
+                  <ul class="causes-menu" id="box-nopower2">
+                    <li>
+                      <a href="#" onclick="showContent('cause25')"
+                        >1.1.1 Modem AC1000Cv2</a>
+                      <a href="#" onclick="showContent('cause26')"
+                        >1.1.2 Modem AC1000Cv3</a>
+                      <a href="#" onclick="showContent('cause27')"
+                        >1.1.3 Modem AC1000F</a>
+                      <a href="#" onclick="showContent('cause28')"
+                        >1.1.4 Modem AC1000HI</a>
+                      <a href="#" onclick="showContent('cause29')"
+                        >1.1.5 Modem AC1000Z</a>
+                      <a href="#" onclick="showContent('cause30')"
+                        >1.1.6 Modem AC1200C</a>
+                      <a href="#" onclick="showContent('cause31')"
+                        >1.1.7 Modem AC1200Z</a>
+                      
+                      
+                    </li>
+                  
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#" data-section="device-information2">1.2 Wifi 6</a>
+                  <ul class="causes-menu" id="box-nopower2">
+                    <li>
+                      <a href="#" onclick="showContent('cause32')"
+                        >1.2.1 Modem AX1500C</a>
+                      <a href="#" onclick="showContent('cause33')"
+                        >1.2.2 Modem AX1800AZ</a>
+                      <a href="#" onclick="showContent('cause34')"
+                        >1.2.3 Modem AX1800C</a>
+                      <a href="#" onclick="showContent('cause35')"
+                        >1.2.4 Modem AX1800GZ</a>
+                      <a href="#" onclick="showContent('cause36')"
+                        >1.2.5 Modem AX3000AZ</a>
+                      <a href="#" onclick="showContent('cause37')"
+                        >1.2.6 Modem AX3000C</a>
+                      <a href="#" onclick="showContent('cause38')"
+                        >1.2.7 Modem AX3000Cv2</a>
+                      <a href="#" onclick="showContent('cause39')"
+                        >1.2.8 Modem AX3000GZ</a>
+                      <a href="#" onclick="showContent('cause40')"
+                        >1.2.9 Modem AX3000GZv2</a>
+                      <a href="#" onclick="showContent('cause41')"
+                        >1.2.10 Modem AX3000HI</a>
+                      <a href="#" onclick="showContent('cause42')"
+                        >1.2.11 Modem AX8000C</a>
+
+                    </li>
+                    
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#" data-section="device-information3">1.3 Router</a>
+                  <ul class="causes-menu" id="box-nopower2">
+                    <li>
+                      <a href="#" onclick="showContent('cause43')"
+                        >1.3.1 Aruba Instant On AP11</a>
+                      <a href="#" onclick="showContent('cause44')"
+                        >1.3.2 EdgeRouter X</a>
+                      <a href="#" onclick="showContent('cause45')"
+                        >1.3.3 Mikrotik RB760iGS</a>
+                      <a href="#" onclick="showContent('cause46')"
+                        >1.3.4 Mikrotik RB4011iGSRM</a>
+                      <a href="#" onclick="showContent('cause47')"
+                        >1.3.5 Unifi AC Lite</a>
+                      <a href="#" onclick="showContent('cause48')"
+                        >1.3.6 Unifi AC LR</a>
+                      <a href="#" onclick="showContent('cause49')"
+                        >1.3.7 Unifi AC Pro</a>
+                      <a href="#" onclick="showContent('cause50')"
+                        >1.3.8 Vigor 300B</a>
+                      <a href="#" onclick="showContent('cause51')"
+                        >1.3.9 Vigor2927</a>
+                      
+                    
+                        
+                    
+                    </li>
+                    
+                  </ul>
+                </li>
+
+                <!-- Thêm các mục khác tương tự -->
+              </ul>
+            </li>
+            <li>
+              <a href="#" data-section="user-guide">2. Hướng dẫn sử dụng Mỹ Bảo</a>
+              
+            </li>
+
+            <li>
+              <a href="#" data-section="training-camera">3. Đào tạo sản phẩm dịch vụ - B2B Camera</a>
+              
+            </li>
+           
+              </ul>
+            </div>
+          </ul>
+          <h2>Hướng dẫn xử lý lỗi</h2>
+          <h3>Lỗi Internet</h3>
+          <div class="border-menu">
+          <ul>
+            <li>
+              <a href="#" data-section="wifi-slow">1. WiFi chậm, chập chờn</a>
+              <ul class="submenu">
+                
+                <!-- Thêm các mục khác tương tự -->
+              </ul>
+            </li>
+            <li>
+              <a href="#" data-section="wifi-cant-use"
+                >2. Không sử dụng được WiFi</a
+              >
+              
+            </li>
+            <li>
+              <a href="#" data-section="wifi-bandwidth"
+                >3. Mạng chậm, kiểm tra băng thông không đúng cam kết</a
+              >
+              
+            </li>
+          
+          </ul>
+          </div>
+
+          <h3>Lỗi Box truyền  hình</h3>
+          <div class="border-menu">
+          <ul>
+            <li>
+              <a href="#" data-section="box-nopower">1. Box không lên nguồn</a>
+              <ul class="submenu">
+                
+                <!-- Thêm các mục khác tương tự -->
+              </ul>
+            </li>
+            <li>
+              <a href="#" data-section="box-nosignal"
+                >2. Box lên nguồn nhưng màn hình đen hoặc không có tín hiệu</a
+              >
+              
+            </li>
+            <li>
+              <a href="#" data-section="box-nointernet"
+                >3. Box lên nguồn nhưng báo mất kết nối Internet</a
+              >
+              
+            </li>
+          </ul>
+          </div>
+
+          <h3>Lỗi Camera</h3>
+          <div class="border-menu">
+          <ul>
+            <li>
+              <a href="#" data-section="camera-usual">1. Các lỗi thường gặp</a>
+              <ul class="submenu">
+                
+                <!-- Thêm các mục khác tương tự -->
+              </ul>
+            </li>
+            <li>
+              <a href="#" data-section="camera-physical">
+                2. Lỗi vật lý</a
+              >
+              
+            </li>
+            <li>
+              <a href="#" data-section="camera-logic"
+                >3. Lỗi Logic</a
+              >
+              
+            </li>
+            <li>
+              <a href="#" data-section="camera-app"
+                >4. Lỗi App</a
+              >
+              
+            </li>
+            <li>
+              <a href="#" data-section="camera-ai-couting"
+                >5. Lỗi AI-Counting</a
+              >
+              
+            </li>
+          </ul>
+          </div>
+
+          <div class="footer">
+            <p>Phòng kỹ thuật công nghệ</p>
+            <div class="social-links">
+              <a href="https://www.tiktok.com/@anhtrailapwifi" target="_blank" class="social-icon">
+                
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+              <a href="#" target="_blank" class="social-icon">
+                <i class="fa fa-youtube-play"></i>
+              </a>
+          </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="img">
+        <img src="https://ho.mypt.vn/assets/images/logo-login.svg">
+        </div>
+        <!-- <h1>Hướng dẫn xử lý sự cố</h1> -->
+        <div id="wifi-slow" class="content-section">
+          <h1>WIFI CHẬM, CHẬP CHỜN</h1>
+          
+          
+          <div class = 'content1'>
+            <h2>1. Facebook không load được bảng tin / Youtube không load được video</h2>
+            <div class="problem-details">
+              <h3>Câu hỏi khai thác</h3>
+              <ul>
+                <li>
+                  Anh chị sử dụng khoảng bao nhiêu thiết bị kết nối wifi trong nhà
+                  mình ạ?
+              </li>
+              <li>
+                Anh chị đang sử dụng wifi ở gần vị trí modem hay xa modem? Có
+                vật cản như ( tường, gỗ, kính… )hay không ạ?
+              </li>
+              <li>
+                Anh chị kiểm tra giúp em vị trí đặt modem có gần các thiết bị
+                như Loa, lò vi sóng, hồ cá.. hay bị khuất không ạ ?
+              </li>
+              </ul>
+              <a href="#" onclick="showContent('cause1')"
+                        >Hướng dẫn khắc phục trường hợp số lượng thiết bị truy cập quá tải năng lực xử lý
+                        modem</a><br>
+              <a href="#" onclick="showContent('cause2')"
+                        >Hướng dẫn khắc phục trường hợp vị trí sử dụng của khách hàng hoặc vị trí lắp đặt modem
+                        không tối ưu</a><br>
+              <a href="#" onclick="showContent('cause3')"
+                        >Hướng dẫn khắc phục trường hợp nhiễu do thiết bị điện tử, vật cản hoặc do Wi-Fi lân
+                        cận</a>
+              </div>
+          </div>
+        </div>
+
+        <div id="facebook-issue" class="content-section">
+          <h2>
+            Facebook không load được bảng tin / Youtube không load được video
+          </h2>
+          <div class="problem-details">
+            <h3>Câu hỏi khai thác</h3>
+            <ul>
+              <li>
+                  Anh chị sử dụng khoảng bao nhiêu thiết bị kết nối wifi trong nhà
+                  mình ạ?
+              </li>
+              <li>
+                Anh chị đang sử dụng wifi ở gần vị trí modem hay xa modem? Có
+                vật cản như ( tường, gỗ, kính… )hay không ạ?
+              </li>
+              <li>
+                Anh chị kiểm tra giúp em vị trí đặt modem có gần các thiết bị
+                như Loa, lò vi sóng, hồ cá.. hay bị khuất không ạ ?
+              </li>
+            </ul>
+            
+          </div>
+          <img src="./Hình ảnh/Hình ảnh/wifi châm chờn/1.png">
+          <img src="./Hình ảnh/Hình ảnh/wifi châm chờn/2.png">
+        </div>
+
+        <div id="cause1" class="content-section">
+          <h2>
+            Nguyên nhân: Số lượng thiết bị truy cập quá tải năng lực xử lý modem
+          </h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>
+                Kiểm tra số lượng thiết bị kết nối, nếu quá tải tiến hành đổi
+                pass wifi, giải thích với khách hàng về năng lực thiết bị, tư
+                vấn KHG trang bị modem chịu tải cao hoặc lắp thêm AP chia tải
+              </li>
+            </ul>
+           
+          
+            <h3>Cách giải quyết chi tiết:</h3>
+          
+          <div class="index">  
+            <h4>Mục lục: </h4>
+            <a href="#1111">Bước 1: Đăng nhập Mỹ Bảo</a><br>
+            <a href="#1112">Bước 2: Nhập Mã OTP</a><br>
+            <a href="#1113">Bước 3: Nhập SHĐ</a><br>
+            <a href="#1114">Bước 4: Chọn vào mục Thiết bị đang kết nối</a><br>
+            <a href="#1115">Bước 5: Kiểm tra số lượng thiết bị đang kết nối</a><br>
+          </div>
+          <div class="content2">
+            <h4 id="1111">Bước 1: Đăng nhập Mỹ Bảo</h4>
+            <img src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Đăng nhập Mỹ Bảo.png">
+            
+
+            <h4 id="1112">Bước 2: Nhập Mã OTP</h4>
+            <img 
+            src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Nhập Mã OTP.png">        
+           
+
+            <h4 id="1113">Bước 3: Nhập SHĐ</h4>
+            <img 
+            src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Nhập SHĐ.png">
+            
+            <h4 id="1114">Bước 4: Chọn vào mục Thiết bị đang kết nối</h4>
+            <img 
+            src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Mục thiết bị đang kết nối.png">
+            
+            <h4 id="1115">Bước 5: Kiểm tra số lượng thiết bị đang kết nối</h4>
+            <img 
+            src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Mục KT số lượng thiết bị đang kết nối.png">
+          </div>
+        </div>
+        </div>
+
+        <div id="cause2" class="content-section">
+          <h2>
+            Nguyên nhân: Vị trí sử dụng của khách hàng hoặc vị trí lắp đặt modem
+            không tối ưu
+          </h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>
+                Đảm bảo cường độ sóng vị trí khách hàng sử dụng phải có công
+                suất tối thiểu ≥-65dBm bằng cách di chuyển thiết bị hoặc tư vấn
+                lắp thêm AP
+              </li>
+            </ul>
+            
+          
+          <h3>Cách giải quyết chi tiết:</h3>
+
+          <div class="index">  
+            <h4>Mục lục: </h4>
+            <a href="#1121">Bước 1: Đăng nhập Mỹ Bảo</a><br>
+            <a href="#1122">Bước 2: Nhập Mã OTP</a><br>
+            <a href="#1123">Bước 3: Nhập SHĐ</a><br>
+            <a href="#1124">Bước 4: Chọn vào mục Thiết bị đang kết nối</a><br>
+            <a href="#1125">Bước 5: Kiểm tra thông số RSSI</a><br>
+          </div>
+        <div class="content2">
+          <h4 id="1121">Bước 1: Đăng nhập Mỹ Bảo</h4>
+          <img src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Đăng nhập Mỹ Bảo.png">
+          
+
+          <h4 id="1122">Bước 2: Nhập Mã OTP</h4>
+          <img 
+          src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Nhập Mã OTP.png">        
+         
+
+          <h4 id="1123">Bước 3: Nhập SHĐ</h4>
+          <img 
+          src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Nhập SHĐ.png">
+          
+          <h4 id="1124">Bước 4: Chọn vào mục Thiết bị đang kết nối</h4>
+          <img 
+          src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Mục thiết bị đang kết nối.png">
+          
+          <h4 id="1125">Bước 5: Kiểm tra thông số RSSI</h4>
+          <img 
+          src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Thông số RSSI ( Cường độ sóng wifi 2 băng tần 2.4G & 5G ).png">
+          
+        </div>
+      </div>
+        </div>
+
+        <div id="cause3" class="content-section">
+          <h2>Nguyên nhân: Nhiễu do thiết bị điện tử hoặc do Wi-Fi lân cận</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>
+                Hạn chế sử dụng băng tần 2.4GHz và ưu tiên sử dụng 5GHz sẽ cải
+                thiệt chất lượng Wi-Fi, trong trường hợp thiết bị không hỗ trợ
+                hoặc không đồng ý nâng cấp thiết bị thì tối ưu Wi-Fi bằng chỉnh
+                sang chế độ auto kênh sóng
+              </li>
+            </ul>
+           
+          
+          <h3>Cách giải quyết chi tiết:</h3>
+
+          <div class="index">  
+            <h4>Mục lục: </h4>
+            <a href="#1131">Bước 1: Đăng nhập Mỹ Bảo</a><br>
+            <a href="#1132">Bước 2: Nhập Mã OTP</a><br>
+            <a href="#1133">Bước 3: Nhập SHĐ</a><br>
+            <a href="#1134">Bước 4: Chọn vào mục Thiết bị đang kết nối</a><br>
+            <a href="#1135">Bước 5: Kiểm tra thiết bị kết nối 2.4G & 5G</a><br>
+          </div>
+          <div class="content2">
+          <h4 id ='1131'>Bước 1: Đăng nhập Mỹ Bảo</h4>
+          <img src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Đăng nhập Mỹ Bảo.png">
+          
+
+          <h4 id ='1132'>Bước 2: Nhập Mã OTP</h4>
+          <img 
+          src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Nhập Mã OTP.png">        
+         
+
+          <h4 id ='1133'>Bước 3: Nhập SHĐ</h4>
+          <img 
+          src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Nhập SHĐ.png">
+          
+          <h4 id ='1134'>Bước 4: Chọn vào mục Thiết bị đang kết nối</h4>
+          <img 
+          src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Mục thiết bị đang kết nối.png">
+          
+          <h4 id ='1135'>Bước 5: Kiểm tra thiết bị kết nối 2.4G & 5G</h4>
+          <img 
+          src="./Hình ảnh/Hình ảnh/Sử dụng MỸ BẢO/Mục kiểm tra thiết bị kết nối 2.4G, or 5G.png">
+        </div>
+      </div>
+        </div>
+
+        <div id="wifi-cant-use" class="content-section">
+          <h1>KHÔNG SỬ DỤNG ĐƯỢC WIFI</h1>
+        
+          <!-- <ul>
+            <li>Kết nối được WiFi nhưng không truy cập được Internet</li>
+            <li>Không kết nối được WiFi</li>
+            <li>Không thấy tên WiFi</li>
+          </ul> -->
+
+          <div class = 'content1'>
+            <h2>1. Kết nối được WiFi nhưng không truy cập được Internet</h2>
+            <div class="problem-details">
+              <h3>Câu hỏi khai thác</h3>
+              <ul>
+                <li>Anh/Chị bị tất cả thiết bị hay chỉ 1 thiết bị nào đó ạ ?</li>
+              </ul>
+              <a href="#" onclick="showContent('cause4')"
+                        >Hướng dẫn khắc phục thiết bị của khách hàng bị chặn trên HiFPT</a><br>
+                <a href="#" onclick="showContent('cause5')"
+                        >Hướng dẫn khắc phục thiết bị modem không có Internet</a>
+              </div>
+          </div>
+          <div class = 'content1'>
+          <h2>2. Không kết nối được WiFi</h2>
+            <div class="problem-details">
+            <h3>Câu hỏi khai thác</h3>
+            <ul>
+              <li>
+                Anh/Chị kết nối đúng tên wifi và mật khẩu nhà mình chưa ạ?
+              </li>
+              <li>
+                Anh/Chị thử kết kết nối wifi ở nhà hàng xóm hoặc phát wifi từ 4G
+                từ máy khác, kết nối thì có được không ạ ?
+              </li>
+            </ul>
+            <a href="#" onclick="showContent('cause6')"
+            >Hướng dẫn khắc phục thiết bị Modem Wi-Fi treo</a><br>
+            <a href="#" onclick="showContent('cause7')"
+                        >Hướng dẫn khắc phục kết nối không đúng tên wifi và mật khẩu</a><br>
+            <a href="#" onclick="showContent('cause8')"
+                        >Hướng dẫn khắc phục thiết bị của khách hàng lỗi, không kết nối được Wi-Fi,
+                        không thu được sóng</a><br>
+            </div>
+          </div>
+          <div class = 'content1'>
+            <h2>3. Không thấy tên WiFi</h2>
+            <div class="problem-details">
+              <h3>Câu hỏi khai thác</h3>
+              <ul>
+                <li>
+                  Anh/Chị kiểm tra thiết bị modem đã được cắm nguồn hoặc bật nút
+                  nguồn chưa ?
+                </li>
+                <li>
+                  Đèn WLAN (2.4 - 5G) của modem có sáng không ạ ?
+                </li>
+                <li>
+                  Anh/Chị thử kết kết nối wifi ở nhà hàng xóm hoặc phát wifi từ 4G
+                từ điện khác, kết nối thì có được không ạ ?
+                </li>
+              </ul>
+              <a href="#" onclick="showContent('cause9')"
+              >Hướng dẫn khắc phục thiết bị modem chưa được bật nguồn hoặc lỏng ổ điện</a><br>
+              <a href="#" onclick="showContent('cause10')"
+                          >Hướng dẫn khắc phục đèn WLAN trên modem WiFi không sáng</a><br>
+              <a href="#" onclick="showContent('cause11')"
+                          >Hướng dẫn khắc phục thiết bị Modem không phát sóng Wi-Fi</a><br>
+              <a href="#" onclick="showContent('cause11.2')"
+                          >Hướng dẫn khắc phục thiết bị của khách hàng lỗi, không kết nối được Wi-Fi,
+                          không thu được sóng</a><br>
+                          
+            </div>
+          </div>
+        </div>
+
+
+        <!-- <div id="connectwf-nointernet" class="content-section">
+          <h2>Kết nối được WiFi nhưng không truy cập được Internet</h2>
+          <div class="problem-details">
+            <h3>Câu hỏi khai thác</h3>
+            <ul>
+              <li>Anh/Chị bị tất cả thiết bị hay 1 thiết bị nào đó ạ ?</li>
+              
+            </ul>
+          </div>
+        </div> -->
+
+        <div id="cause4" class="content-section">
+          <h2>Nguyên nhân: Thiết bị của khách hàng bị chặn trên HiFPT</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Kiểm tra và bỏ chặn thiết bị trên HiFPT</li>
+            </ul>
+          
+          <h3>Cách giải quyết chi tiết:</h3>
+
+          <!-- <div class="index">  
+            <h4>Mục lục: </h4>
+            <a href="#1211">Bước 1: Đăng nhập HiFPT</a><br>
+            <a href="#1212">Bước 2: Vào phần Quản lý Internet</a><br>
+            <a href="#1213">Bước 3: Vào phần Chặn thiết bị</a><br>
+            <a href="#1214">Bước 4: Cho phép thiết bị kết nối Internet</a><br>
+          </div> -->
+          <div class="content21">
+            <div class="image-row">
+                <h4 id="1211">Bước 1: Đăng nhập HiFPT</h4>
+                <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 2/1.jpg">
+            </div>
+            <div class="image-row">
+                <h4 id="1212">Bước 2: Vào phần Quản lý Internet</h4>
+                <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 2/2.jpg">
+            </div>
+            <div class="image-row">
+                <h4 id="1213">Bước 3: Vào phần Chặn thiết bị</h4>
+                <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 2/3.jpg">
+            </div>
+            <div class="image-row">
+                <h4 id="1214">Bước 4: Cho phép thiết bị kết nối Internet</h4>
+                <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 2/4.jpg">
+            </div>
+        </div>
+        
+
+      </div>
+      </div>
+        <div id="cause5" class="content-section">
+          <h2>Nguyên nhân: Thiết bị modem không có Internet</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Khởi động lại thiết bị modem</li>
+            </ul>
+            <h3>Cách giải quyết chi tiết:</h3>
+            <ul>
+            <li>Rút nguồn và cắm lại</li>
+            </ul>
+          </div>
+          
+        </div>
+
+        <!-- <div id="no-connect" class="content-section">
+          <h2>Không kết nối được WiFi</h2>
+          <div class="problem-details">
+            <h3>Câu hỏi khai thác</h3>
+            <ul>
+              <li>
+                Anh/Chị kết nối đúng tên wifi và mật khẩu nhà mình chưa ạ?
+              </li>
+              <li>
+                Anh/Chị thử kết kết nối wifi ở nhà hàng xóm hoặc phát wifi từ 4G
+                từ điện khác, kết nối thì có được không ạ ?
+              </li>
+            </ul>
+          </div>
+        </div> -->
+
+        <div id="cause6" class="content-section">
+          <h2>Nguyên nhân: Thiết bị Modem Wi-Fi treo</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Khởi động lại thiết bị modem</li>
+            </ul>
+            <h3>Cách giải quyết chi tiết:</h3>
+          <ul>
+            <li>Rút nguồn và cắm lại</li>
+          </ul>
+          </div>
+          
+        </div>
+
+        <div id="cause7" class="content-section">
+          <h2>Nguyên nhân: Kết nối không đúng tên wifi và mật khẩu</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>
+                Kiểm tra lại tên và mât khẩu wifi trên Hifpt, quên kết nối và
+                kết nối lại wifim
+              </li>
+            </ul>
+          
+          <h3>Cách giải quyết chi tiết:</h3>
+          <!-- <div class="index">  
+            <h4>Mục lục: </h4>
+            <a href="#1221">Bước 1: Đăng nhập HiFPT</a><br>
+            <a href="#1222">Bước 2: Vào phần Quản lý Internet</a><br> -->
+
+          <!-- </div> -->
+          <div class="content21">
+            <div class="image-row">
+          <h4 id ="1221">Bước 1: Đăng nhập HiFPT</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 2/1.jpg">
+        </div>
+        <div class="image-row">
+          <h4 id ="1222">Bước 2: Vào phần Quản lý Internet</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 2/2.jpg">   
+        </div>
+        </div>   
+        </div>
+        </div>
+
+        <div id="cause8" class="content-section">
+          <h2>
+            Nguyên nhân: Thiết bị của khách hàng lỗi, không kết nối được Wi-Fi,
+            không thu được sóng
+          </h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>
+                So sánh với thiết bị khác, dùng điện thoại phát WiFi bằng 4G để
+                test
+              </li>
+            </ul>
+          
+          <h3>Cách giải quyết chi tiết:</h3>
+
+          <!-- <div class="index">  
+            <h4>Mục lục: </h4>
+            <a href="#1231">Bước 1: Đăng nhập HiFPT</a><br>
+            <a href="#1232">Bước 2: Vào phần Quản lý Internet</a><br>
+            <a href="#1233">Bước 3: Chọn vào mạng đang kết nối, sau đó bấm vào "Tắt WiFi"</a><br>
+
+          </div> -->
+          <div class="content21">
+            <div class="image-row">
+          <h4 id="1231">Bước 1: Đăng nhập HiFPT</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/1.jpg">
+        </div>
+        <div class="image-row">
+          <h4 id="1232">Bước 2: Vào phần Quản lý Internet</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/2.jpg">      
+        </div>
+        <div class="image-row">
+          <h4 id="1233">Bước 3: Chọn vào mạng đang kết nối, sau đó bấm vào "Tắt WiFi" </h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/3.jpg">  
+        </div>
+        </div>    
+        </div>
+        </div>
+
+        <!-- <div id="notseewifi-issue" class="content-section">
+          <h2>Không thấy tên WiFi</h2>
+          <div class="problem-details">
+            <h3>Câu hỏi khai thác</h3>
+            <ul>
+              <li>
+                Anh/Chị kiểm tra thiết bị modem đã được cắm nguồn hoặc bật nút
+                nguồn chưa ?
+              </li>
+              <li>Đèn WLAN (2.4 - 5G) của modem có sáng không ạ ?</li>
+              <li>
+                Anh/Chị thử kết kết nối wifi ở nhà hàng xóm hoặc phát wifi từ 4G
+                từ điện khác, kết nối thì có được không ạ ?
+              </li>
+            </ul>
+          </div>
+        </div> -->
+
+        <div id="cause9" class="content-section">
+          <h2>
+            Nguyên nhân: Thiết bị modem chưa được bật nguồn hoặc lỏng ổ điện
+          </h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Khởi động lại thiết bị modem</li>
+            </ul>
+          
+          <h3>Cách giải quyết chi tiết:</h3>
+          <ul>
+            <li>Rút nguồn và cắm lại</li>
+          </ul>
+        </div>
+        </div>
+
+        <div id="cause10" class="content-section">
+          <h2>Nguyên nhân: Đèn WLAN trên Modem Wi-Fi không sáng</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Cách 1: Khởi động lại thiết bị modem</li>
+              <li>Cách 2: Bật WiFi trên ứng dụng HiFPT</li>
+            </ul>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <ul>
+            <li>
+                Cách 1: Rút nguồn và cắm lại</li>
+            <li>
+            Cách 2: Bật WiFi trên ứng dụng HiFPT</li>  
+          </ul>
+        </div>
+          <!-- <div class="index">  
+            <h4>Mục lục: </h4>
+            <a href="#1321">Bước 1: Đăng nhập HiFPT</a><br>
+            <a href="#1322">Bước 2: Vào phần Quản lý Internet</a><br>
+            <a href="#1323">Bước 3: Chọn vào mạng đang kết nối, sau đó bấm vào "Bật WiFi"</a><br>
+
+          </div> -->
+          <div class="content21">
+          <div class="image-row">
+          <h4 id="1321">Bước 1: Đăng nhập HiFPT</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/1.jpg">
+          </div>
+
+          <div class="image-row">
+          <h4 id="1322">Bước 2: Vào phần Quản lý Internet</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/2.jpg">      
+        </div>
+
+        <div class="image-row">
+          <h4 id="1323">Bước 3: Chọn vào mạng đang kết nối, sau đó bấm vào "Bật WiFi" </h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/3.jpg">   
+        </div>
+        </div>   
+       
+        </div>
+
+        <div id="cause11" class="content-section">
+          <h2>Nguyên nhân: Thiết bị Modem không phát sóng Wi-Fi</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Khởi động lại thiết bị modem</li>
+            </ul>
+          
+          <h3>Cách giải quyết chi tiết:</h3>
+          <ul>
+            <li>Rút nguồn và cắm lại</li>
+          </ul>
+        </div>
+        </div>
+
+        <div id="cause11.2" class="content-section">
+          <h2>Nguyên nhân: Thiết bị của khách hàng lỗi, không kết nối được Wi-Fi, không thu được sóng</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>So sánh với thiết bị khác, dùng điện thoại phát WiFi bằng 4G để test</li>
+            </ul>
+          
+          <h3>Cách giải quyết chi tiết:</h3>
+          <ul>
+            <li>Tắt wifi, bật 4G và phát sóng wifi trên điện thoại</li>
+          </ul>
+        </div>
+        </div>
+
+        <div id="cause12" class="content-section">
+          <h2>
+            Nguyên nhân: Thiết bị của khách hàng lỗi, không kết nối được Wi-Fi,
+            không thu được sóng
+          </h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>
+                So sánh với thiết bị khác, dùng điện thoại phát WiFi bằng 4G để
+                test
+              </li>
+            </ul>
+          </div>
+          <h3>Cách giải quyết chi tiết:</h3>
+          <div class="content21 ">
+          <h4 id="1341">Bước 1: Đăng nhập HiFPT</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/1.jpg">
+          
+
+          <h4 id="1342">Bước 2: Vào phần Quản lý Internet</h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/2.jpg">      
+        
+          <h4 id="1343">Bước 3: Chọn vào mạng đang kết nối, sau đó bấm vào "Tắt WiFi" </h4>
+          <img src="./Hình ảnh/Hình ảnh/Không sử dụng được WIFI/Hướng xử lý 4/3.jpg">      
+        </div>
+        </div>
+
+        <div id="wifi-bandwidth" class="content-section">
+          <h1>MẠNG CHẬM, KIỂM TRA BĂNG THÔNG KHÔNG ĐÚNG CAM KẾT</h1>
+          <div class = 'content1'>
+            <h2>1. KHG kiểm tra bằng ứng dụng Speedtest không đủ băng thông</h2>
+            <div class="problem-details">
+              <h3>Câu hỏi khai thác</h3>
+              <ul>
+                <li>
+                  Anh/Chị tải ứng dụng Speedtest trên Chplay (hệ điều hành
+                android), Appstore (hệ điều hành IOS) và kết nối điện thoại
+                hỗ trợ wifi5 hoặc wifi6 đo kiểm lại băng thông giúp ạ?
+              </li> 
+              <li>
+                Anh chị kiểm tra có thiết bị nào khác đang sử dụng nhiều băng
+                thông không? Anh chị kiểm tra xem có ai đang tải file dung lượng
+                lớn, xem video, hoặc chơi game trực tuyến gây tiêu hao băng
+                thông hay không ?
+              </li>
+              <li>
+                Anh/Chị đang kết nối có đang kết nối đúng wifi nhà mình chưa ạ ?
+                Vị trí sử dụng wifi có gần modem không ạ ?
+              </li>
+              </ul>
+              <a href="#" onclick="showContent('cause13')"
+                        >Hướng dẫn khắc phục trường hợp khách hàng đo test bắt sai Wi-Fi</a><br>
+              <a href="#" onclick="showContent('cause14')"
+                        >Hướng dẫn khắc phục trường hợp nhiều thiết bị truy cập, sử dụng full băng thông</a><br>
+              <a href="#" onclick="showContent('cause15')"
+                        >Hướng dẫn khắc phục trường hợp khách hàng bắt sai Wi-Fi</a>
+              </div>
+          </div>
+        </div>
+
+        <!-- <div id="wifi-bandwidth1" class="content-section">
+          <h2>KHG kiểm tra bằng ứng dụng Speedtest không đủ băng thông</h2>
+          <div class="problem-details">
+            <h3>Câu hỏi khai thác</h3>
+            <ul>
+              <li>
+                Anh/Chị tải ứng dụng Speedtest trên Chplay ( hệ điều hành
+                android ), Appstore ( hệ điều hành IOS ) và kết nối điện thoại
+                hỗ trợ wifi5 hoặc wifi6 đo kiểm lại băng thông giúp ạ ?
+              </li>
+              <li>
+                Anh chị kiểm tra có thiết bị nào khác đang sử dụng nhiều băng
+                thông không? Anh chị kiểm tra xem có ai đang tải file dung lượng
+                lớn, xem video, hoặc chơi game trực tuyến gây tiêu hao băng
+                thông hay không ?
+              </li>
+              <li>
+                Anh/Chị đang kết nối có đang kết nối đúng wifi nhà mình chưa ạ ?
+                Vị trí sử dụng wifi có gần modem không ạ ?
+              </li>
+            </ul>
+          </div>
+        </div> -->
+
+        <div id="cause13" class="content-section">
+          <h2>Nguyên nhân: Khách hàng đo test bắt sai Wi-Fi</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Tải ứng dụng Speedtest</li>
+              <li>Bắt wifi 5GHz để đo hoặc cắm lan trực tiếp</li>
+            </ul>
+          
+          <h3>Cách giải quyết chi tiết:</h3>
+          <div class="content2">
+            <ol>
+              <li>Tải Speedtest,
+              Vào AppStore/CHPlay, tải ứng dụng Speedtest
+              <img src="./Hình ảnh/Hình ảnh/Mạng chậm không đúng cam kết/Huonq xly 3.png"> </li>
+              
+              <li>Bắt WiFi 5GHz để đo hoặc cắm lan trực tiếp 
+                <ul>
+                <li>Bắt Wifi 5GHz</li>
+                  <ul>
+                    <li>Thứ 1: Di chuyển gần modem, bé hơn 3m, không vật cản </li>
+                    <li>Thứ 2, tắt mở wifi trên thiết bị của KH (điện thoại/PC/Laptop)</li>
+                    <li>Thứ 3, Kết nối wifi 5G của modem chính </li>
+                  </ul>
+                <li>Cắm Lan trực tiếp</li>
+              
+
+              
+              </div>
+          </div>
+        
+       
+        </div>
+
+        <div id="cause14" class="content-section">
+          <h2>Nguyên nhân: Nhiều thiết bị truy cập, sử dụng full băng thông</h2>
+          <div class="problem-details">
+              <h3>Hướng xử lý:</h3>
+              <ul>
+                <li>Khởi động lại thiết bị modem</li>
+              </ul>
+            
+            <h3>Cách giải quyết chi tiết:</h3>
+            <ul>
+              <li>Rút nguồn và cắm lại</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="cause15" class="content-section">
+          <h2>Nguyên nhân: Khách hàng bắt sai Wi-Fi</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+          </div>
+          <ol>
+            <li> Bắt Wifi 5GHz</li>
+            <ul>
+            <li>Thứ 1: Di chuyển gần modem, bé hơn 3m, không vật cản </li>
+            <li>Thứ 2, tắt mở wifi trên thiết bị của KH (điện thoại/PC/Laptop)</li>
+            <li>Thứ 3, Kết nối wifi 5G của modem chính </li>
+            </ul>
+            <li>Lan trực tiếp</li>
+        </ol>
+        </div>
+
+        <div id="box-nopower" class="content-section">
+          <h1>BOX KHÔNG LÊN NGUỒN</h1>
+        
+        <div class = 'content1'>
+          <h2>1. Box không sáng đèn</h2>
+          <div class="problem-details">
+            <h3>Câu hỏi khai thác</h3>
+            <ul>
+              <li>
+                Anh chị kiểm tra nguồn điện, nguồn box đã cắm đúng chưa ?
+            </li>
+            <li>
+              Anh chị kiểm tra đã cắm đúng jack nguồn box truyền hình chưa ạ ?
+            </li>
+            <li>
+              Anh chị kiểm tra đã nhấn nút nguồn power off trên remote Box?
+            </li>
+            </ul>
+            <a href="#" onclick="showContent('cause16')"
+                      >Ổ cắm điện/nguồn Box nhà khách hàng</a><br>
+            <a href="#" onclick="showContent('cause17')"
+                      >Cắm sai jack nguồn Box</a><br>
+            <a href="#" onclick="showContent('cause18')"
+                      >Chưa bật power off trên remote Box</a>
+            </div>
+        </div>  
+      </div>
+
+        <!-- <div id="box-nopower1" class="content-section">
+          <h2>Box không sáng đèn</h2>
+          <div class="problem-details">
+            <h3>Câu hỏi khai thác</h3>
+            <ul>
+              <li>Anh chị kiểm tra nguồn điện, nguồn box đã cắm đúng chưa ?</li>
+              <li>
+                Anh chị kiểm tra đã cắm đúng jack nguồn box truyền hình chưa ạ ?
+              </li>
+              <li>
+                Anh chị kiểm tra đã nhấn nút nguồn power off trên remote Box?
+              </li>
+            </ul>
+          </div>
+        </div> -->
+
+        <div id="cause16" class="content-section">
+          <h2>Nguyên nhân: Ổ cắm điện/nguồn Box nhà khách hàng</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>
+                Kiểm tra lại ổ cắm điện đang cắm hoặc thử chuyển sang một ổ cắm
+                khác.
+              </li>
+            </ul>
+          
+            <h3>Cách giải quyết chi tiết:</h3>
+            <ul>
+              <li>Rút nguồn và cắm lại</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="cause17" class="content-section">
+          <h2>Nguyên nhân: Cắm sai jack nguồn Box</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Cắm lại đúng cổng jack nguồn Box</li>
+            </ul>
+          
+            <div class="content2">
+            <h3>Cách giải quyết chi tiết:</h3>
+            <img src="./Hình ảnh/Hình ảnh/Box không lên nguồn/hương xử lý 2.png">
+            </div>
+          </div>
+        </div>
+
+        <div id="cause18" class="content-section">
+          <h2>Nguyên nhân: Chưa bật power off trên remote Box</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Nhấn nút nguồn trên remote box</li>
+            </ul>
+          
+            <h3>Cách giải quyết chi tiết:</h3>
+            <div class="content21">
+            <div class="image-row">
+            
+            <img src="./Hình ảnh/Hình ảnh/Box không lên nguồn/Hướng xử lý 3.jpg">
+            </div>
+            </div>
+          </div>
+      </div>
+
+        <div id="box-nosignal" class="content-section">
+          <h1>Box lên nguồn nhưng màn hình đen hoặc không có tín hiệu</h1>
+          <div class = 'content1'>
+            <h2>1. TV màn hình đen báo lỗi Signal</h2>
+            <div class="problem-details">
+              <h3>Câu hỏi khai thác</h3>
+              <ul>
+                <li>
+                  Anh chị kiểm tra giúp em đã gắn dây HDMI, AV vào trên box truyền
+                hình và tivi chưa ạ ?
+              </li>
+              <li>
+                Anh chị kiểm tra giúp em đang cắm cổng HDMI, AV cổng số mấy trên
+                tivi ạ ?
+              </li>
+              </ul>
+              <a href="#" onclick="showContent('cause19')"
+                        >Chưa cắm hoặc lỏng cổng HDMI, AV trên cả Box và
+                        Tivi.</a><br>
+              <a href="#" onclick="showContent('cause20')"
+                        >Cắm nhầm cổng HDMI, AV</a><br>
+
+              </div>
+          </div>  
+        </div>
+
+        <!-- <div id="box-nosignal1" class="content-section">
+          <h2>TV màn hình đen báo lỗi Signal</h2>
+          <div class="problem-details">
+            <h3>Câu hỏi khai thác</h3>
+            <ul>
+              <li>
+                Anh chị kiểm tra giúp em đã gắn dây HDMI, AV vào trên box truyền
+                hình và tivi chưa ạ ?
+              </li>
+              <li>
+                Anh chị kiểm tra giúp em đang cắm cổng HDMI, AV cổng số mấy trên
+                tivi ạ ?
+              </li>
+            </ul>
+          </div>
+        </div> -->
+
+        <div id="cause19" class="content-section">
+          <h2>
+            Nguyên nhân: Chưa cắm hoặc lỏng cổng HDMI, AV trên cả Box và Tivi.
+          </h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Hướng dẫn kiểm tra kết nối</li>
+            </ul>
+          
+            <div class="content2">
+            <h3>Cách giải quyết chi tiết:</h3>
+            <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng không có tín hiệu/Hương xử lý 1.png"> 
+            </div>
+          </div>
+      </div>
+
+        <div id="cause20" class="content-section">
+          <h2>Nguyên nhân: Cắm nhầm cổng HDMI, AV</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Hướng dẫn thao tác chuyển cổng tín hiệu</li>
+            </ul>
+          
+          <div class="content2">
+            <h3>Cách giải quyết chi tiết:</h3>
+            <div class="image-row">
+            
+              <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng không có tín hiệu/hướng xử lý 2.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div id="box-nointernet" class="content-section">
+          <h1>Box lên nguồn nhưng báo mất kết nối Internet</h1>
+          <div class = 'content1'>
+            <h2>1. Màn hình thông báo lỗi kết nối dịch vụ Box IPTV / Box OTT</h2>
+            <div class="problem-details">
+              <h3>Câu hỏi khai thác</h3>
+              <ul>
+                <li>
+                  Anh chị kiểm tra giúp em đã gắn dây LAN từ box truyền hình đến
+                modem , bộ phát wifi FPT(nếu có), bộ chia(switch nếu có)
+                chưa ạ ?
+              </li>
+              <li>
+                Anh chị kiểm tra các thiết bị trong nhà có kết nối được wifi
+                bình thường không ạ ? (Trường hợp box OTT kết nối wifi sử dụng
+                truyền hình)
+              </li>
+              <li>Anh chị kiểm tra xem có điều khiển được box truyền hình không ạ
+                ?</li>
+              </ul>
+              <a href="#" onclick="showContent('cause21')"
+                        >Box không nhận IP.
+                        
+                      </a><br>
+              <a href="#" onclick="showContent('cause22')"
+                        >Box có IP ( đèn trắng đứng)</a><br>
+              <a href="#" onclick="showContent('cause23')"
+                        >Thiết bị Modem Wi-Fi treo (Không kết nối được WiFi hoặc
+                        kết nối được WiFi nhưng không truy cập được Internet)</a><br>
+              <a href="#" onclick="showContent('cause24')"
+                        >Box treo/đứng hoặc nhận sai IP</a><br>
+
+              </div>
+          </div>
+        </div>
+
+        <!-- <div id="box-nointernet1" class="content-section">
+          <h2>Màn hình thông báo lỗi kết nối dịch vụ Box IPTV / Box OTT</h2>
+          <div class="problem-details">
+            <h3>Câu hỏi khai thác</h3>
+            <ul>
+              <li>
+                Anh chị kiểm tra giúp em đã gắn dây LAN từ box truyền hình đến
+                modem , bộ phát wifi FPT ( nếu có ), bộ chia ( switch nếu có )
+                chưa ạ ?
+              </li>
+              <li>
+                Anh chị kiểm tra các thiết bị trong nhà có kết nối được wifi
+                bình thường không ạ ? ( Trường hợp box OTT kết nối wifi sử dụng
+                truyền hình )
+              </li>
+              <li>
+                Anh chị kiểm tra xem có điều khiển được box truyền hình không ạ
+                ?
+              </li>
+            </ul>
+          </div>
+        </div> -->
+
+        <div id="cause21" class="content-section">
+          <h2>
+            Nguyên nhân: Box không nhận IP
+            <ul>
+              <li>Box OTT (nháy trắng)</li>
+              <li>Box IPTV (nháy đỏ)</li>
+              <li>Lỗi kết nối wifi (Box OTT)</li>
+            </ul>
+          </h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Kiểm tra đèn LAN trên thiết bị Modem</li>
+              <li>Kiểm tra kết nối WiFi trên box</li>
+            </ul>
+          
+            <h3>Cách xử lý chi tiết:</h3>
+            <div class="index">  
+              <h4>Mục lục: </h4>
+              <a href="#2311">1. Kiểm tra đèn LAN trên thiết bị Modem</a><br>
+              <a href="#2312">2. Kiểm tra kết nối WiFi trên box</a><br>
+            </div>
+            <div class="content2">
+            <h4 id ="2311">Kiểm tra đèn LAN trên thiết bị Modem</h4>
+            <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng báo mất kết nối internet/Hướng xủ lý 1_IPTVI.jpg">
+            <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng báo mất kết nối internet/Hướng xử lý 1_OTT.jpg">
+            
+
+            <h4 id ="2312">Kiểm tra kết nối WiFi trên box</h4>
+            <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng báo mất kết nối internet/hướng xử lý 5.jpg">   
+            </div>
+          </div>
+        </div>
+
+        <div id="cause22" class="content-section">
+          <h2>Nguyên nhân: Box có IP ( đèn trắng đứng)</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>
+                Phân đoạn kết nối internet của Box (Modem - thiết bị thứ 3 - Box)
+              </li>
+            </ul>
+          
+            <h3>Cách xử lý chi tiết</h3>
+            <ul>
+              <li>Rút toàn bộ LAN của modem và cắm lại</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="cause23" class="content-section">
+          <h2>
+            Nguyên nhân: Thiết bị Modem Wi-Fi treo (Không kết nối được WiFi hoặc kết nối được WiFi nhưng không truy cập được Internet)
+          </h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Khởi động lại Modem và Box</li>
+            </ul>
+          
+            <h3>Cách xử lý chi tiết</h3>
+            <ul>
+              <li>Rút điện và cắm lại Modem và box</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="cause24" class="content-section">
+          <h2>Nguyên nhân: Box treo/đứng hoặc nhận sai IP</h2>
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Khởi động và cài đặt IP cho Box</li>
+            </ul>
+          
+            <h3>Cách xử lý chi tiết</h3>
+            <div class="content21">
+              <ol>
+                <li>Trường hợp Box IPTV: Chọn Cài đặt -> Cấu hình IP</li>
+                <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng báo mất kết nối internet/HƯƠNG XỬ LÝ 4.png">
+                <li>Trường hợp Box OTT: Chọn cài đặt -> Chọn DHCP</li>
+                <img src="./Hình ảnh/Hình ảnh/Box lên nguồn nhưng báo mất kết nối internet/Hướng xử lý 4.png">
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div id="device-information" class="content-section">
+          <h1>Thông tin thiết bị</h1>
+          <ul>
+            <li>Thông tin các thiết bị hiện có</li>
+          </ul>
+        </div>
+
+        <div id="device-information1" class="content-section">
+          <h1>WiFi 5</h1  >
+
+          <div class="entry">
+            <p>
+              Công nghệ Wifi 5 là công nghệ thế hệ thứ 5 , ứng dụng và hoạt động đồng thời cùng một lúc trên hai băng tần 5Ghz và 2.4Ghz , hỗ trợ MU-MIMO , vùng phủ sóng rộng và tương thích hoàn toàn với các chuẩn Wifi cũ ( a/b/g/n)
+            </p>
+            <div class="box shadow">
+              <div class ="box-inner-block">
+                Wifi 5 (<strong>802.11ac</strong>)  để trải nghiệm tốc độ đường truyền lên đến hơn 1730Mbps – hơn hẳn với tốc độ tối đa là 600Mbps (<strong>802.11n</strong>)  ở chuẩn wifi 4.
+			
+              </div>
+            </div>
+            <div class="content2">
+            <h4>Đặc điểm nổi bật của WiFi thế hệ 5:</h4>
+            <ol>
+              <li><strong>Băng thông kênh truyền rộng hơn:</strong> Wifi 5 (chuẩn 802.11ac) hoạt động trên băng tần 5GHz với độ rộng của băng thông có thể dễ dàng tùy chọn như 20MHz, 40MHz, 60MHz, 80MHz, 120MHz và 160MHz. Trong khi đó wifi chuẩn 802.11n truyền thống chỉ hỗ trợ duy nhất với băng thông 20MHz và 40MHz. Băng thông rộng đồng nghĩa với việc gia tăng tốc độ truyền nhận, đổi lại sẽ giảm số kênh truyền. Điều này băng thông rộng hơn sẽ giúp việc truyền tải giữ liệu giữa hai thiết bị trở nên nhanh hơn.</li>
+              <li><strong>Nhiều luồng dữ liệu hơn:</strong> Spatial stream là một luồng dữ liệu được truyền đi bằng công nghệ đa anten MIMO. Thiết bị nhiều hơn 1 anten có thể phát đi cùng lúc nhiều luồng tín hiệu. Trong khi wifi 4 chỉ hỗ trợ tối đa 4 luồng spatial stream thì wifi 5 con số này lại được nâng lên gấp đôi. Điều này sẽ tương đương với 8 anten hỗ trợ xử lý thông tin và truyền nhận dữ liệu.</li>
+              <li><strong>Hỗ trợ Multi user – MIMO:</strong> Ở wifi chuẩn n, một thiết bị có thể truyền nhiều spatial stream song chỉ nhắm đến một điểm duy nhất, nghĩa là chỉ một thiết bị (hoặc một người dùng) có thể nhận được dữ liệu ở một thời điểm. Do đó công nghệ MIMO trên wifi 4 được gọi là single – user MIMO (SU – MIMO).Wifi chuẩn ac đã được nâng cấp công nghệ mới với tên gọi multi – user MIMO. Công nghệ này cho phép một access point sử dụng nhiều anten để truyền tín hiệu đến nhiều thiết bị (hoặc nhiều người dùng) cùng lúc và trên một băng tần.</li>
+              <li><strong>Beamforimg:</strong> Các thiết bị 802.11 ac sử dụng công nghệ để tạo định hướng tín hiệu truyền nhận gọi là beamforming (hiểu đơn giản là “tạo ra một chùm tín hiệu”). Nhờ việc tích hợp beamforming mà router wifi 5 có thể xác định được vị trí của thiết bị nhận (ví dụ như smartphone, laptop hay tablet). Sau đó, năng lượng tín hiệu được đẩy lên mức mạnh hơn hướng về thiết bị đó.</li>
+              <li><strong>Tầm phủ sóng rộng hơn:</strong> Theo biểu đồ do Netgear cung cấp, cùng sở hữu 3 anten nhưng router dùng chuẩn wifi 5 cho tầm phủ sóng rộng 90 mét , router dùng chuẩn wifi 4 chỉ cho vùng phủ sóng tối đa là 80 mét . Điều này chứng tỏ wifi 5 có vùng phủ sóng hơn hơn so với wifi 4.</li>
+              <li><strong>Tương thích ngược với các chuẩn cũ:</strong> Đa số các router wifi hỗ trợ chuẩn wifi 5 đều hỗ trợ các chuẩn cũ gồm b/g/n và các router này đều là loại băng tần kép hỗ trợ song song băng tần 2.4Ghz và 5Ghz. Nếu băng tần 2.4GHz được sử dụng để phát wifi chuẩn n, thì băng tần 5GHz sẽ dùng để phát wifi chuẩn ac. Khả năng phát song song giúp tốc độ tối đa do nhà sản xuất công bố sẽ là “phép cộng” của tốc độ tối đa trên dải 2.4GHz và 5GHz. Ví dụ, Home Wifi ZTE H196A có tốc độ tối đa là 1200Mbps, bao gồm 867Mbps cho chuẩn ac ở băng tần 5GHz và 300Mbps cho chuẩn n ở băng tần 2.4GHz.</li>
+              <img src="https://i0.wp.com/fpti.vn/wp-content/uploads/2022/10/wifi-chuan-ac-wifi-5-la-gi.jpg?resize=768%2C432&ssl=1">
+
+              
+
+              
+            </ol>
+          </div>
+          </div>
+        </div>
+
+        <div id="user-guide" class="content-section">
+          <h1>Hướng dẫn sử dụng Mỹ Bảo</h1>
+          <embed src="./HDSD MỸ BẢO (2).pdf" type="application/pdf" width="100%" height="1000px">
+
+        </div>
+
+        <div id="training-camera" class="content-section">
+          <h1>Đào tạo sản phẩm dịch vụ - B2B Camera</h1>
+          <embed src="./FLI_-Đào-tạo-camera-B2B-cho-KTV-TINPNC (1).pdf" type="application/pdf" width="100%" height="1000px">
+
+        </div>
+
+        <div id="cause25" class="content-section">
+          <h2>Modem AC1000Cv2</h2>
+          <img src="./Information/Wifi5/AC1000Cv2.png">
+        </div>
+
+        <div id="cause26" class="content-section">
+          <h2>Modem AC1000Cv3</h2>
+          <img src="./Information/Wifi5/AC1000Cv3.png">
+        </div>
+
+        <div id="cause27" class="content-section">
+          <h2>Modem AC1000F</h2>
+          <img src="./Information/Wifi5/AC1000F.png">
+        </div>
+
+        <div id="cause28" class="content-section">
+          <h2>Modem AC1000HI</h2>
+          <img src="./Information/Wifi5/AC1000HI.png">
+        </div>
+
+        <div id="cause29" class="content-section">
+          <h2>Modem AC1000Z</h2>
+          <img src="./Information/Wifi5/AC1000Z.png">
+        </div>
+
+        <div id="cause30" class="content-section">
+          <h2>Modem AC1200C</h2>
+          <img src="./Information/Wifi5/AC1200C.png">
+        </div>
+
+        <div id="cause31" class="content-section">
+          <h2>Modem AC1200Z</h2>
+          <img src="./Information/Wifi5/AC1200Z.png">
+        </div>
+
+        <div id="device-information2" class="content-section">
+          <h1>WiFi 6</h1>
+          <div class="problem-details">
+            <div class="content2">
+            <h2>1. Wifi 6 là gì?</h2>
+            <p>Như một bước tiến vượt bậc, Internet Wifi thông minh Wi-Fi 6 không chỉ đơn giản là một tiêu chuẩn mới mà còn là cột mốc quan trọng, mở ra những tiềm năng mới cho mạng không dây. Và đối với người dùng FPT, WiFi 6 là một công nghệ tiên tiến mà còn là một trải nghiệm kết nối đỉnh cao, mang tới những tiện ích và ưu điểm không ngờ.</p>
+            <h2>2. Wifi 6 FPT  - Internet wifi thông minh là gì?
+            </h2>
+            <p>Wifi 6 là một chuẩn kết nối internet wifi thông minh mới nhất của FPT. FPT Wi-Fi 6 có nhiều cải tiến hơn so với các tiêu chuẩn trước, như tăng tốc độ, dung lượng, hiệu quả và bảo mật của mạng không dây, dưới đây là một số ưu điểm của wifi 6 fpt.</p>
+            <h3>2.1. Tương Thích Tốt Hơn</h3>
+            <p>Tất cả trong một: Hoạt động trên cả hai loại tần số 2.4GHz và 5GHz, FPT Wifi 6 tạo ra sự linh hoạt đáng kể. Điện thoại, laptop hay bất kỳ thiết bị thông thường nào cũng có thể tận hưởng lợi ích của tần số cao và thấp, trong khi các thiết bị smarthome, camera hay robot chỉ hỗ trợ tần số thấp cũng sẽ được hưởng lợi tối đa. 
+            </p>
+            <img src="https://lh7-us.googleusercontent.com/1tnduM6AWy2xRRbgE3HQr5invoYyz_4nrKxk05ehqEZjesRF9hJGbJq7gDxuONWzYu9HstUvqSgCS5O-2X4hU7BnaWgsZ7eV904PwBTZSmyWzoGL8mo-GvSDtpV90LDf2XR1tyRvubFy4JOhFk6gJO0">
+            <h3>2.2 Tốc Độ Siêu Nhanh</h3>
+            <p>Nhanh Chóng Và Liên Tục: Internet wifi thông minh FPT Wi-Fi 6 mang lại tốc độ đột phá, với việc gấp 3-5 lần nhanh hơn so với các công nghệ trước đó. Để hiểu rõ hơn, hãy tưởng tượng một gói cước có băng thông lý thuyết là 1Gbps, khi sử dụng modem wifi 5 chỉ đạt khoảng 200-300 Mbps, nhưng với modem wifi 6, tốc độ có thể đạt tới 600-700 Mbps.
+            </p>
+            <h3>2.3. Ổn Định và Tiết Kiệm Hơn</h3>
+            <p>Kết Nối Mạng Ổn Định: Sử dụng các công nghệ tiên tiến như MU-MIMO và TWT, Internet wifi thông minh FPT Wi-Fi 6 đảm bảo rằng mọi thiết bị kết nối sẽ trải qua trải nghiệm mạng ổn định và liên tục. Điện thoại và laptop sẽ sử dụng mạng hiệu quả, trong khi đồng thời giúp tiết kiệm đáng kể pin, như một chiếc xe máy tay ga thông minh sử dụng tính năng tự động dừng xe để tiết kiệm năng lượng.
+            </p>
+            <p>Tiết Kiệm Pin: Internet wifi thông minh FPT Wi-Fi 6 có thể giúp tiết kiệm đến 67% lượng pin tiêu thụ, tạo điều kiện cho một trải nghiệm kết nối không chỉ nhanh chóng mà còn bền bỉ.
+            </p>
+            <h3>2.4. Bảo Mật Tối Ưu Dữ Liệu Của Bạn</h3>
+            <p>Mã Hóa Vững Chắc: Nhờ công nghệ WPA3, FPT Wi-Fi 6 đảm bảo rằng mọi dữ liệu truyền qua mạng đều được mã hóa một cách vững chắc. Giúp ngăn chặn mọi hình thức tấn công từ bên ngoài mà còn tạo ra một tầng bảo vệ mạnh mẽ cho thông tin cá nhân của bạn.
+            </p>
+            <h2>3. Công nghệ internet Wifi thông minh Wifi 6 FPT</h2>
+            <h3>3.1. Công nghệ chính của FPT Wi-Fi 6</h3>
+            <p>Sử dụng các công nghệ mới như:</p>
+            <p>Được hỗ trợ bởi MU-MIMO, thiết bị có khả năng xử lý đồng thời nhiều người dùng và giảm độ trễ. Tính năng Target Wake Time (TWT) giúp tiết kiệm năng lượng bằng cách đưa thiết bị vào chế độ "ngủ" khi không sử dụng, kéo dài tuổi thọ pin.</p>
+            <p>BSS Color giải quyết vấn đề tắc nghẽn và xung đột tần số sóng, đặc biệt quan trọng trong môi trường đô thị. Cuối cùng, tiêu chuẩn bảo mật WPA 3 đảm bảo an toàn cao cấp với mã hóa cá nhân và khả năng chống lại các cuộc tấn công.</p>
+            <img src="https://lh7-us.googleusercontent.com/hA1z59waTtZmexMzvkJrVWnH8qFeQcwOr72p9I3cpiSfgJPZt5jy13VjUUD0P-NfplStLyu0O06ffy5Raw-orGnCecGRgfQH7dVTUnjtigq-3p_oh7GOB60XyhadTCR2v5e3h5UxHR531xUjmlhJMJg">
+            <p>Với những tính năng này, Internet Wifi thông minh  không chỉ làm tăng tốc độ mạng, mà còn đảm bảo sự ổn định, tiết kiệm năng lượng và bảo mật mạng không dây cho trải nghiệm kết nối Internet vượt trội.</p>
+            <h3>3.2. Tốc độ wifi 6 trên điện thoại</h3>
+            <p>Tốc độ của internet wifi thông minh FPT Wi-Fi 6 trên điện thoại là một trong những ưu điểm nổi bật và quan trọng nhất của công nghệ này. Với sự kết hợp giữa tần số cao, khả năng tương thích và các công nghệ tiên tiến, FPT Wi-Fi 6 mang đến một trải nghiệm kết nối Internet tuyệt vời.
+            </p>
+            <p>Đặc biệt, tốc độ internet wifi thông minh của Wi-Fi 6 trên điện thoại gấp 3-5 lần so với các công nghệ trước đó. Ví dụ, khi so sánh với một gói cước có băng thông lý thuyết là 1Gbps, thì khi sử dụng modem Wifi 5, tốc độ chỉ đạt khoảng 200-300 Mbps. Tuy nhiên, khi chuyển sang sử dụng modem Wifi 6, tốc độ có thể đạt tới 600-700 Mbps, mang lại trải nghiệm truyền tải dữ liệu mượt mà và nhanh chóng.
+          </p>
+
+        </div>
+
+
+
+            
+          </div>
+        </div>
+
+        <div id="cause32" class="content-section">
+          <h2>Modem AX1500C</h2>
+          <img src="./Information/Wifi6/AX1500C.png">
+        </div>
+
+        <div id="cause33" class="content-section">
+          <h2>Modem AX1800AZ</h2>
+          <img src="./Information/Wifi6/AX1800AZ.png">
+        </div>
+
+        <div id="cause34" class="content-section">
+          <h2>Modem AX1800C</h2>
+          <img src="./Information/Wifi6//AX1800C.png">
+        </div>
+
+        <div id="cause35" class="content-section">
+          <h2>Modem AX1800GZ</h2>
+          <img src="./Information/Wifi6//AX1800GZ.png">
+        </div>
+
+        <div id="cause36" class="content-section">
+          <h2>Modem AX3000AZ</h2>
+          <img src="./Information/Wifi6//AX3000AZ.png">
+        </div>
+
+        <div id="cause37" class="content-section">
+          <h2>Modem AX3000C</h2>
+          <img src="./Information/Wifi6//AX3000C.png">
+        </div>
+
+        <div id="cause38" class="content-section">
+          <h2>Modem AX3000Cv2</h2>
+          <img src="./Information/Wifi6//AX3000Cv2.png">
+        </div>
+
+        <div id="cause39" class="content-section">
+          <h2>Modem AX3000GZ</h2>
+          <img src="./Information/Wifi6//AX3000GZ.png">
+        </div>
+
+        <div id="cause40" class="content-section">
+          <h2>Modem AX3000GZv2</h2>
+          <img src="./Information/Wifi6//AX3000GZv2.png">
+        </div>
+
+        <div id="cause41" class="content-section">
+          <h2>Modem AX3000HI</h2>
+          <img src="./Information/Wifi6//AX3000HI.png">
+        </div>
+
+        <div id="cause42" class="content-section">
+          <h2>Modem AX8000C</h2>
+          <img src="./Information/Wifi6//AX8000C.png">
+        </div>
+
+        <div id="device-information3" class="content-section">
+          <h1>Router</h1>
+          <div class="problem-details">
+          </div>
+        </div>
+
+        <div id="cause43" class="content-section">
+          <h2>Router Aruba Instant On AP11</h2>
+          <img src="./Information/Router/Aruba Instant On AP11.png">
+        </div>
+
+        <div id="cause44" class="content-section">
+          <h2>Router EdgeRouter X</h2>
+          <img src="./Information/Router/EdgeRouter X.png">
+        </div>
+
+        <div id="cause45" class="content-section">
+          <h2>Router Mikrotik RB760iGS</h2>
+          <img src="./Information/Router/Mikrotik RB760iGS.png">
+        </div>
+
+        <div id="cause46" class="content-section">
+          <h2>Router Mikrotik RB4011iGSRM</h2>
+          <img src="./Information/Router/Mikrotik RB4011iGSRM.png">
+        </div>
+
+        <div id="cause47" class="content-section">
+          <h2>Router Unifi AC Lite</h2>
+          <img src="./Information/Router/Unifi AC Lite.png">
+        </div>
+
+        <div id="cause48" class="content-section">
+          <h2>Router Unifi AC LR</h2>
+          <img src="./Information/Router/Unifi AC LR.png">
+        </div>
+
+        <div id="cause49" class="content-section">
+          <h2>Router Unifi AC Pro</h2>
+          <img src="./Information/Router/Unifi AC Pro.png">
+        </div>
+
+        <div id="cause50" class="content-section">
+          <h2>Router Vigor 300B</h2>
+          <img src="./Information/Router/Vigor 300B.png">
+        </div>
+
+        <div id="cause51" class="content-section">
+          <h2>Router Vigor2927</h2>
+          <img src="./Information/Router/Vigor2927.png">
+        </div>
+
+      <div id="camera-usual" class="content-section">
+          <h1>CÁC LỖI THƯỜNG GẶP</h1>
+        
+          <div class = 'content1'>
+            <h2>1. Lỗi kết nối Wifi</h2>
+            <div class="problem-details">
+             <h3>Câu hỏi khai thác</h3> 
+               <ul>
+                <li>
+                  Bạn có thể kiểm tra xem WiFi có đang hoạt động bình thường không?
+              </li>
+              <li>
+                Camera của bạn đang kết nối với WiFi 2.4GHz hay 5GHz? (Một số camera chỉ hỗ trợ 2.4GHz)
+              </li>
+              <li>
+                Bạn đã thử đặt lại (reset) camera hoặc router chưa?
+              </li>
+              <li>
+                Có thiết bị nào khác gặp vấn đề kết nối WiFi không?
+              </li>
+              </ul> 
+              <a href="#" onclick="showContent('cause52')"
+                        >Hướng dẫn khắc phục tình trạng lỗi kết nối WiFi</a><br>
+            </div>
+          </div>
+          <div class = 'content1'>
+            <h2>2. Không có cảnh báo/video nhận diện chuyển động</h2>
+            <div class="problem-details">
+             <h3>Câu hỏi khai thác</h3> 
+               <ul>
+                <li>
+                  Bạn có bật tính năng nhận diện chuyển động trong cài đặt không?
+              </li>
+              <li>
+                Khu vực giám sát có đủ sáng không?
+              </li>
+              <li>
+                Có vật cản nào che khuất tầm nhìn của camera không?
+              </li>
+              <li>
+                Camera có đang ở chế độ tiết kiệm pin hoặc chế độ riêng tư không?
+              </li>
+              </ul>   
+              <a href="#" onclick="showContent('cause53')"
+                        >Hướng dẫn khắc phục tình trạng không có cảnh báo/video nhận diện chuyển động</a><br>
+                      </div>
+                    </div>
+                    <div class = 'content1'>
+                      <h2>3. Camera đã có người sở hữu                      </h2>
+                      <div class="problem-details">
+                       <h3>Câu hỏi khai thác</h3> 
+                         <ul>
+                          <li>
+                            Bạn có chắc rằng camera chưa được đăng ký trên tài khoản khác không?
+                        </li>
+                        <li>
+                          Bạn đã thử đặt lại camera về trạng thái mặc định chưa?
+                        </li>
+                        <li>
+                          Bạn có quyền truy cập vào tài khoản trước đó để xóa thiết bị không?
+                        </li>
+                        
+                        </ul>   
+                        
+              <a href="#" onclick="showContent('cause54')"
+                        >Hướng dẫn khắc phục tình trạng Camera đã có người sở hữu</a><br>
+                      </div>
+                    </div>
+                    <div class = 'content1'>
+                      <h2>4. Camera không thêm lại được                      </h2>
+                      <div class="problem-details">
+                       <h3>Câu hỏi khai thác</h3> 
+                         <ul>
+                          <li>
+                            Bạn có thực hiện đúng hướng dẫn thêm thiết bị không?
+                        </li>
+                        <li>
+                          Camera có hiển thị đèn báo hiệu trạng thái kết nối không?
+                        </li>
+                        <li>
+                          Bạn đã thử kết nối camera với một mạng WiFi khác chưa?
+                        </li>
+                        
+                        </ul>   
+                        
+              <a href="#" onclick="showContent('cause55')"
+                        >Hướng dẫn khắc phục tình trạng Camera không thêm lại được</a><br>
+                      </div>
+                    </div>
+                    <div class = 'content1'>
+                      <h2>5. Tạm ngừng quan sát                      </h2>
+                      <div class="problem-details">
+                       <h3>Câu hỏi khai thác</h3> 
+                         <ul>
+                          <li>
+                            Camera có đang ở chế độ nghỉ hoặc chế độ tiết kiệm năng lượng không?
+                        </li>
+                        <li>
+                          Bạn có thử khởi động lại camera chưa?
+                        </li>
+                        <li>
+                          Camera có bị mất kết nối internet không?
+                        </li>
+                        
+                        </ul>  
+              <a href="#" onclick="showContent('cause56')"
+                        >Hướng dẫn khắc phục tình trạng tạm ngừng quan sát</a><br>
+                      </div>
+                    </div>
+                    <div class = 'content1'>
+                      <h2>6. Camera liveview màn hình đen                      </h2>
+                      <div class="problem-details">
+                       <h3>Câu hỏi khai thác</h3> 
+                         <ul>
+                          <li>
+                            Camera có hoạt động bình thường khi xem lại video đã ghi không?
+                        </li>
+                        <li>
+                          Bạn có đang sử dụng ứng dụng chính hãng để xem liveview không?
+                        </li>
+                        <li>
+                          Bạn đã thử kiểm tra trên thiết bị khác chưa?
+                        </li>
+                        
+                        </ul>  
+              <a href="#" onclick="showContent('cause57')"
+                        >Hướng dẫn khắc phục tình trạng Camera liveview màn hình đen</a><br>
+                      </div>
+                    </div>
+                    <div class = 'content1'>
+                      <h2>7. Camera phản hồng ngoại                      </h2>
+                      <div class="problem-details">
+                       <h3>Câu hỏi khai thác</h3> 
+                         <ul>
+                          <li>
+                            Bạn có thử bật/tắt chế độ hồng ngoại trong cài đặt không?
+                        </li>
+                        <li>
+                          Môi trường xung quanh có nguồn sáng mạnh ảnh hưởng đến chế độ hồng ngoại không?
+                        </li>
+                        <li>
+                          Bạn có thể thử di chuyển camera đến một vị trí khác xem có cải thiện không?
+                        </li>
+                        
+                        </ul>  
+              <a href="#" onclick="showContent('cause58')"
+                        >Hướng dẫn khắc phục tình trạng Camera phản hồng ngoại</a><br>
+                      </div>
+                    </div>
+                    <div class = 'content1'>
+                      <h2>8. Camera ngược sáng                      </h2>
+                      <div class="problem-details">
+                       <h3>Câu hỏi khai thác</h3> 
+                         <ul>
+                          <li>
+                            Bạn có thử bật chế độ bù sáng hoặc HDR trong cài đặt không?
+                        </li>
+                        <li>
+                          Có nguồn sáng mạnh nào chiếu trực tiếp vào camera không?
+                        </li>
+                        <li>
+                          Bạn đã thử điều chỉnh góc đặt camera chưa?
+                        </li>
+                        
+                        </ul>  
+              <a href="#" onclick="showContent('cause59')"
+                        >Hướng dẫn khắc phục tình trạng Camera ngược sáng</a><br>
+                      </div>
+                    </div>
+            
+        </div>
+
+        <div id="camera-physical" class="content-section">
+          <h1>LỖI VẬT LÝ</h1>
+        
+          <div class = 'content1'>
+            <h2>1. FPT Camera không xem được trên App, hiển thị màn hình đen</h2>
+            <div class="problem-details">
+              <h3>Câu hỏi khai thác</h3>
+              <ul>
+                <li>
+                  Camera có đang được cấp nguồn điện bình thường không?
+              </li>
+              <li>
+                Đèn tín hiệu trên camera có hoạt động không?
+              </li>
+              <li>
+                Camera có bị đặt ở vị trí quá xa router WiFi không?
+              </li>
+              <li>
+                Bạn đã thử reset lại camera và kết nối lại chưa?
+              </li>
+              </ul>
+              <a href="#" onclick="showContent('cause60')"
+                        >Hướng dẫn khắc phục FPT Camera không xem được trên App, hiển thị màn hình đen</a><br>
+                      </div>
+                    </div>  
+                    <div class = 'content1'>
+                      <h2>2. FPT Camera không xem lại được khi không có tín hiệu NET                      </h2>
+                      <div class="problem-details">
+                        <h3>Câu hỏi khai thác</h3>
+                        <ul>
+                          <li>
+                            Bạn có kiểm tra lại kết nối mạng của camera không?
+                        </li>
+                        <li>
+                          Bạn có thể thử sử dụng một mạng WiFi khác để kiểm tra không?
+                        </li>
+                        <li>
+                          Camera có bị ngắt điện hoặc tắt nguồn trong thời gian cần xem lại không?
+                        </li>
+                        </ul>
+              <a href="#" onclick="showContent('cause61')"
+                        >Hướng dẫn khắc phục FPT Camera không xem lại được khi không có tín hiệu NET</a><br>
+                      </div>
+                    </div>
+                    <div class = 'content1'>
+                      <h2>3. FPT Camera xem bị mờ hồng ngoại</h2>
+                      <div class="problem-details">
+                        <h3>Câu hỏi khai thác</h3>
+                        <ul>
+                          <li>
+                            Bạn có kiểm tra xem ống kính camera có bị bụi bẩn hoặc che khuất không?
+                        </li>
+                        <li>
+                          Có nguồn sáng mạnh nào gây ảnh hưởng đến chế độ hồng ngoại không?
+                        </li>
+                        <li>
+                          Bạn có thử bật/tắt chế độ hồng ngoại trong cài đặt không?
+                        </li>
+                        <li>
+                          Bạn có thử đặt lại camera ở vị trí khác để kiểm tra không?
+                        </li>
+                        </ul>
+              <a href="#" onclick="showContent('cause62')"
+                        >Hướng dẫn khắc phục FPT Camera xem bị mờ hồng ngoại</a><br>
+                      </div>
+                    </div>
+            
+        </div>
+
+        <div id="camera-logic" class="content-section">
+          <h1>LỖI LOGIC</h1>
+        
+          <div class = 'content1'>
+            <h2>1. FPT Camera xem bị đen màn hình trên App</h2>
+            <div class="problem-details">
+              <h3>Câu hỏi khai thác</h3>
+              <ul>
+                <li>
+                  Bạn có chắc camera đang hoạt động và có kết nối internet không?
+              </li>
+              <li>
+                Bạn đã thử xem trên một thiết bị khác chưa?
+              </li>
+              <li>
+                Bạn có đang sử dụng đúng tài khoản có quyền truy cập vào camera không?
+              </li>
+              </ul>
+              <a href="#" onclick="showContent('cause63')"
+                        >Hướng dẫn khắc phục FPT Camera xem bị đen màn hình trên App</a><br>
+                      </div>
+                    </div> 
+                    <div class = 'content1'>
+                      <h2>2. FPT Camera xem bị đứng hình, trễ hình trên App</h2>
+                      <div class="problem-details">
+                        <h3>Câu hỏi khai thác</h3>
+                        <ul>
+                          <li>
+                            Bạn có thử kiểm tra tốc độ mạng trên thiết bị của mình chưa?
+                        </li>
+                        <li>
+                          Camera có đang kết nối WiFi hay mạng dây ổn định không?
+                        </li>
+                        <li>
+                          Bạn có sử dụng nhiều thiết bị cùng lúc truy cập vào camera không?
+                        </li>
+                        <li>
+                          Bạn có thử giảm độ phân giải video trong cài đặt ứng dụng để giảm tải không?
+                        </li>
+                        </ul>
+              <a href="#" onclick="showContent('cause64')"
+                        >Hướng dẫn khắc phục FPT Camera xem bị đứng hình, trễ hình trên APP</a><br>
+            </div>
+          </div>  
+        </div>
+
+        <div id="camera-app" class="content-section">
+          <h1>LỖI APP</h1>
+        
+          <div class = 'content1'>
+            <h2>1. FPT Camera không đăng nhập được, dữ liệu được đẩy lên Cloud nhưng không xem được trên App
+            </h2>
+            <div class="problem-details">
+              <h3>Câu hỏi khai thác</h3>
+              <ul>
+                <li>
+                  Bạn có thấy thông báo lỗi cụ thể nào khi đăng nhập không?
+              </li>
+              <li>
+                Bạn đã kiểm tra lại kết nối internet trên điện thoại chưa?
+              </li>
+              <li>
+                Bạn có thử đăng nhập bằng một thiết bị khác chưa?
+              </li>
+              <li>
+                Ứng dụng FPT Camera của bạn đã được cập nhật lên phiên bản mới nhất chưa?
+              </li>
+              </ul>
+              <a href="#" onclick="showContent('cause65')"
+                        >Hướng dẫn khắc phục FPT Camera không đăng nhập được, dữ liệu được đẩy lên Cloud nhưng không xem được trên App</a><br>
+                      </div>
+                    </div>  
+
+                    <div class = 'content1'>
+                      <h2>2. FPT Camera xem trực tiếp được nhưng xem lại không được
+                      </h2>
+                      <div class="problem-details">
+                        <h3>Câu hỏi khai thác</h3>
+                        <ul>
+                          <li>
+                            Bạn có đăng ký gói lưu trữ cloud cho camera không?
+                        </li>
+                        <li>
+                          Bạn đã kiểm tra xem dữ liệu có thực sự được ghi lại trong phần lưu trữ không?
+                        </li>
+                        <li>
+                          Bạn có thử xem lại trên một thiết bị khác hoặc mạng khác không?
+                        </li>
+                        <li>
+                          Bạn đã thử khởi động lại ứng dụng hoặc đăng xuất rồi đăng nhập lại chưa?
+                        </li>
+                        </ul>
+              <a href="#" onclick="showContent('cause66')"
+                        >Hướng dẫn khắc phục FPT Camera xem trực tiếp được nhưng xem lại không được</a><br>
+            </div>
+          </div>  
+        </div>
+
+        <div id="camera-ai-couting" class="content-section">
+          <h1>LỖI AI-COUTING</h1>
+        
+          <div class = 'content1'>
+            <!-- <h2>1. Lỗi kết nối Wifi</h2> -->
+            <div class="problem-details">
+              <!-- <h3>Câu hỏi khai thác</h3> -->
+              <!-- <ul>
+                <li>
+                  Anh chị kiểm tra nguồn điện, nguồn box đã cắm đúng chưa ?
+              </li>
+              <li>
+                Anh chị kiểm tra đã cắm đúng jack nguồn box truyền hình chưa ạ ?
+              </li>
+              <li>
+                Anh chị kiểm tra đã nhấn nút nguồn power off trên remote Box?
+              </li>
+              </ul> -->
+              <a href="#" onclick="showContent('cause67')"
+                        >Không hiện kết quả đếm người</a><br>
+              <a href="#" onclick="showContent('cause68')"
+                        >Kết quả đếm bị sai, tỷ lệ đúng &lt;85% </a><br>
+            </div>
+          </div>  
+        </div>
+
+      <div id="cause52" class="content-section">
+        <h2>Nguyên nhân: Nhập sai mật khẩu WiFi, kết nối nhầm WiFi 5Ghz, cường độ sóng WiFi không đảm bảo hoặc do camera không nhận WiFi.</h2>
+        <div class="two-column">
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Bước 1: Cắm dây lan để camera không kết nối internet</li>
+              <li>Bước 2: Kiểm tra Wifi
+                <ul>
+                  <li>Đúng băng tần 2.4Ghz</li>
+                  <li>Tên và mật khẩu không chứa ký tự đặc biệt</li>
+                  <li>Kiểm tra mật khẩu WiFi</li>
+
+                </ul>
+              </li>
+              <li>Bước 3: Thử một số cách đơn giản
+                <ul>
+                  <li>Cách 1: Thay đổi kênh sóng WiFi</li>
+                  <li>Cách 2: Thay đổi tên/mật khẩu WiFi</li>
+                </ul>
+              </li>
+              <li>Bước 4: Gửi thông tin theo Ticket</li>
+            </ul>
+          </div>
+          <div class="problem-image">
+            <img src="Camera/usual-error/connectwifi.jpeg" alt="Connect wifi error" />
+          </div>
+        </div>
+      </div>
+
+      <div id="cause53" class="content-section">
+        <h2>Nguyên nhân: Không có cảnh báo/video nhận diện chuyển động</h2>
+        <div class="two-column">
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Bước 1: Kiểm tra cài đặt thông báo trên điện thoại và app FPT 
+                camera.</li>
+              <li>Bước 2: Khởi động lại thiết bị(camera + modem)</li>
+              <li>Bước 3: Chia sẻ camera qua số điện thoại khác để kiểm tra.
+                <ul>
+                  <li><strong>Trường hợp 1:</strong> Số được chia sẻ vẫn nhận được thông báo
+                    bình thường.(Lỗi Service App)
+                    <ul>
+                      <li>Khởi động lại điện thoại</li>
+                      <li>Vào app FPT camera đăng xuất tài khoản.</li>
+                      <li>Xóa app FPT camera -> Tải/Download lại app và đăng
+                        nhập lại bình thường.</li>
+                    </ul>
+                  </li>
+                  <li><strong>Trường hợp 2:</strong> Không có thông báo
+                    <ul>
+                      <li>Gửi thông tin theo ticket</li>
+                    </ul>
+                  </li>
+                </ul>
+                  
+              </li>
+            
+            </ul>
+          </div>
+          <div class="problem-image">
+            <div class="content21">
+              <img src="Camera/usual-error/no-motion-detection1.jpeg" alt="No motion detection" />
+              <img src="Camera/usual-error/no-motion-detection2.jpeg" alt="No motion detection" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cause54" class="content-section">
+        <h2>Nguyên nhân: Camera đang được cài đặt trên một số điện thoại khác</h2>
+        <div class="two-column"> 
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Bước 1: Gửi Seri/number camera đang gặp lỗi trên cho Điều Hành / SI kiểm tra camera đang cài đặt trên sdt nào để xoá camera.</li>
+              <li>Bước 2: Nếu không thao tác được trên app/ gửi thông tin FSS
+                <ul>
+                  <li>SHĐ:</li>
+                  <li>Serial CMR:</li>
+                  <li>SĐT</li>
+                  <li>Lý do</li>
+                  <li>Trường hợp đổi SĐT/chủ sở hữu gửi kèm biên bản tại quầy</li>
+
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="problem-image">
+            <img src="Camera/usual-error/camera-has-a-host.jpeg"/>
+            
+          </div>
+        </div>
+      </div>
+
+      <div id="cause55" class="content-section">
+        <h2>Nguyên nhân: Camera mới bị xóa chưa hoàn tất thời gian reset trên server</h2>
+      
+        <div class="two-column">
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>
+                Kết nối mạng LAN cho camera, led CMR sáng trắng đứng trong <span style="color: red;">15p</span> rồi quét lại.
+              </li>
+            </ul>
+
+            <h3>Kiểm tra:</h3>
+            <ul>
+              <li>Mạng kết nối ổn định.</li>
+              <li>Đèn led CMR luôn sáng trắng đứng.</li> 
+              <li>Modem/AP có cấp phát IP cho camera.</li>
+            </ul>
+
+          </div>
+          <div class="problem-image"> 
+              <img src="Camera/usual-error/camera-reset-timeout.jpeg"/>
+          </div>
+        </div>
+      </div>
+
+      <div id="cause56" class="content-section">
+        <h2>Nguyên nhân: Camera đã hết hạn gói Cloud</h2>
+      
+        <div class="two-column">
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Tư vấn khách hàng và gia hạn gói cloud theo chính sách.</li>
+            </ul>
+          </div>
+          <div class="problem-image">
+            <img src="Camera/usual-error/cant-look.jpeg"/>
+          </div>
+        </div>
+      </div>
+
+      <div id="cause57" class="content-section">
+        <h2>Nguyên nhân: Mất luồng liveview</h2>
+      
+        <div class="two-column">
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Bước 1: Khởi động lại modem, camera, thiết bị di động</li>
+              <li>Bước 2: Chia sẻ CMR sang thiết bị khác</li>
+              <li>Bước 3: Kiểm tra kết nối mạng của CMR</li>
+              <li>Bước 4: Thay đổi kết nối mạng của thiết bị di động</li>
+              <li>Bước 5: Dùng tính năng chuẩn đoán CMR</li>
+              <li>Bước 6: Gửi thông tin theo Ticket</li>
+            </ul>
+          </div>
+          <div class="problem-image">
+            <img src="Camera/usual-error/cant-liveview.jpeg"/>
+          </div>
+        </div>
+      </div>
+
+      <div id="cause58" class="content-section">
+        <h2>Nguyên nhân: Chỉnh góc nhìn camera chưa phù hợp</h2>
+      
+        
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Tư vấn chỉnh góc/thay đổi vị trí camera phù hợp</li>
+            </ul>
+          </div>
+          <div class="problem-image">
+            <div class="content21">
+              <img src="Camera/usual-error/pink-error1.png"/>
+              <img src="Camera/usual-error/pink-error2.png"/>
+            </div>
+          </div>
+        
+      </div>
+
+      <div id="cause59" class="content-section">
+        <h2>Nguyên nhân: Ngược sáng</h2>
+      
+        
+          <div class="problem-details">
+            <h3>Hướng xử lý:</h3>
+            <ul>
+              <li>Tư vấn chỉnh góc/thay đổi vị trí camera phù hợp</li>
+            </ul>
+          </div>
+          <div class="problem-image">
+            <div class="content21">
+              <img src="Camera/usual-error/nguoc-sang1.png"/>
+              <img src="Camera/usual-error/nguoc-sang2.png"/>
+            </div>
+          </div>
+      </div>
+
+      <div id="cause60" class="content-section">
+        <h2>FPT Camera không xem được trên App, hiển thị màn hình đen</h2>
+        <div class="two-column">
+            <div class="problem-details">
+              <h3>Nguyên nhân:</h3>
+              <ul>
+                <li>
+                  Thiết bị Switch, Modem, Camera
+                  <ul>
+                    <li>Các thiết bị như Switch, Modem, Camera không được cấp nguồn 
+                      hoặc cấp nguồn không đầy đủ. Hoặc đấu nối không đúng cực âm (-) 
+                      dương (+)</li>
+                    <li>Do cổng tín hiệu/ phần cứng Camera Switch,Modem bị hỏng</li>
+                  </ul>
+                </li>
+                <li>
+                  Dây tín hiệu
+                  <ul>
+                    <li>Dây tín hiệu bị đứt, dây tín hiệu được nối nhưng không đảm bảo suy 
+                      hao</li>
+                    <li>Dây tín hiệu bị chập</li>
+                    <li>Khoảng cách truyền tín hiệu quá xa so với khoảng cách truyền dẫn tối 
+                      đa.</li>
+                  </ul>
+                </li>
+                <li>Thiết bị khác
+                  <ul>
+                    <li>Các phụ kiện như đầu cắm mạng, jack nguồn bị hỏng, lỏng, bị chập 
+                      cháy…</li>
+                  </ul>
+                </li>
+                <li>Do thiết bị POE lỗi, không hoạt động</li>
+              </ul>
+            </div>
+            <div class="problem-details">
+              <h3>Hướng xử lý:</h3>
+              <ul>
+                <li>Đối với hợp đồng ONNET kiểm tra tín hiệu suy hao, tín hiệu quang bên ngoài 
+                  không đạt: Xử lý như 1 case lỗi đường quang bình</li>
+                <li>
+                  Dùng 1 nguồn và 1 camera khác để tiến hành kiểm tra, bảo hành theo qui trình:
+                  <ul>
+                    <li>Nếu không cần kiểm tra bị đứt dây nguồn hoặc Jack nguồn có bị lỏng. Các 
+                      điểm đấu nối nếu có có bị Oxi hóa, …</li>
+                    <li>Nếu có tiến hành thay thế nguồn, Jack cắmĐối với camera sử dụng hệ thống</li>
+                  </ul>
+                </li>
+                <li>POE, kiểm tra trên camera và cổng tín hiệu nói thiết bị cấp nguồn POE xem có 
+                  báo đèn sáng hay không:
+                  <ul>
+                    <li>Cổng tín hiệu trên camera, đèn báo trên camera không sáng  thì do camera  
+                      hỏng, hoặc nguồn cấp không còn hoạt động</li>
+                    <li>Do đường dây tín hiệu đứt gãy, chập, …</li>
+                    <li>Do đầu bấm mạng kết nối bị lỗi</li>
+                    <li>Do thiết bị camera, thiết bị PoE lỗi: Đem một Camera đang hoạt động thử 
+                      cắm vào chỗ Camera không lên hình xem có lên không và lựa chọn 1 trong 
+                      các hướng xử lý thay thế: Camera/ thiết bị PoE/ Dây cáp/ Bấm lại đầu cáp</li>
+                  </ul>
+                </li>
+                <li style="font-style: italic;">Lưu ý: Do Camera thường sử dụng nguồn một chiều nên cần đấu đúng cực (+) 
+                  và cực (-)
+                </li>
+              </ul>
+              
+            </div>
+        </div>
+      </div>
+
+      <div id="cause61" class="content-section">
+        <h2> FPT Camera không xem lại được khi không có tín hiệu NET</h2>
+        <div class="two-column">
+            <div class="problem-details">
+              <h3>Nguyên nhân:</h3>
+              <ul>
+                <li>
+                  Lỗi thẻ nhớ của FPT Camera
+                </li>
+                <li>
+                  Lỗi thiết bị Camera
+                
+                </li>
+                <li>Nhà khách hàng bị mất điện thời điểm cần xem lại
+        
+                </li>
+              </ul>
+            </div>
+            <div class="problem-details">
+              <h3>Hướng xử lý:</h3>
+              <ul>
+                <li>Bước 1: Tắt modem khoảng 5 phút, sau đó khởi động lại, 
+                  kiểm tra FPT Camera xem lại được thời điểm đó không</li>
+                <li>
+                  Bước 2: Kiểm tra dây tín hiệu đến camera, có thể tháo 
+                camera xuống cắm dây lan 1m có sẵn để kiểm tra
+                </li>
+                <li>Bước 3: Kiểm tra modem có cấp ip cho camera hay 
+                  không
+                </li>
+                <li> Bước 4: Tiến hành bảo hành, đổi Camera theo chính sách 
+                  thiết bị nếu bước 1,2,3 NOK                  
+                </li>
+              </ul>
+              
+            </div>
+        </div>
+      </div>
+
+      <div id="cause62" class="content-section">
+        <h2>FPT Camera xem bị mờ hồng ngoại</h2>
+        <div class="two-column">
+            <div class="problem-details">
+              <h3>Nguyên nhân:</h3>
+              <ul>
+                <li>
+                  Nguồn điện không đủ để hồng ngoại hoạt động.
+                </li>
+                <li>
+                  Đèn hồng ngoại bị hỏng, bóng đèn bị che.
+                </li>
+                <li> Ống kính và đèn hồng ngoại bị bẩn.
+                </li>
+                <li>Khu vực quan sát có quá nhiều vật hấp thụ 
+                  ánh sáng</li>
+                <li>Không gian quá rộng.</li>
+                <li>Bị phản quang từ các vật thể khác</li>
+              </ul>
+            </div>
+            <div class="problem-details">
+              <h3>Hướng xử lý:</h3>
+              <ul>
+                <li>Đảm bảo nguồn cấp cho Camera đủ dòng và áp theo khuyến cáo của nhà sản 
+                  xuất</li>
+                <li>
+                  Kiểm tra đèn hồng ngoại, che cảm biến và các đèn hồng ngoại xem các đèn có 
+                  hoạt động nữa không. Đèn không sáng thì bị hỏng và cần tiến hành thay thế, bảo 
+                  hành theo quy định
+                </li>
+                <li>Làm vệ sinh mắt và đèn hồng ngoại bằng giấy mềm. Lau chùi nhẹ nhàng, sạch 
+                  sẽ. Có thể sử dụng cồn để lau. Các hệ thống Camera quan sát cần được vệ 
+                  sinh, bảo dưỡng ống kính và hồng ngoại thường xuyên theo định kỳ
+                </li>
+                <li>Không gian có nhiều vật hấp thụ ánh sáng như các vật màu tối, vải bông, tường 
+                  nhám, …thì khi lắp đặt nên lựa chọn góc đặt camera hợp lý. Sắp xếp đồ vật gọn 
+                  gàng, phát quang các bụi rậm với Camera quan sát ngoài trời, …             
+                </li>
+                <li>Với không gian rộng thì cần sử dụng số lượng camera hợp lý. Có thể bổ sung 
+                  bằng đèn hồng ngoại rời để Camera hoạt động tốt hơn            
+                </li>
+                <li>Bị phản sáng do các bề mặt tường quá gần mắt, không gian quá hẹp: Điều chỉnh 
+                  góc nhìn tránh gần bề mặt tường cạnh, tránh chiếu thẳng vào các vật phản quang 
+                  như gương, đá hoa, …          
+                </li>
+              </ul>
+              
+            </div>
+        </div>
+      </div>
+
+      <div id="cause63" class="content-section">
+        <h2>FPT Camera xem bị đen màn hình trên App</h2>
+        <div class="two-column">
+            <div class="problem-details">
+              <h3>Nguyên nhân:</h3>
+              <ul>
+                <li>
+                  Lỗi cấu hình, modem, router
+                </li>
+                <li>
+                  Lỗi phần mềm, server
+                </li>
+              </ul>
+            </div>
+            <div class="problem-details">
+              <h3>Hướng xử lý:</h3>
+              <ul>
+                <li>Đối với Camera wifi sử dụng phần mềm wifi analyzer trên điện thoại kiểm tra khu 
+                  vực có bị nhiễu sóng 2.4GHz không. Nếu cường độ không đủ thì tối ưu lại wifi cho 
+                  KH, tư vấn KH chuyển vị trí lắp phù hợp (vẫn đảm bảo quan sát khu vực yêu cầu 
+                  của KH) hoặc lắp thêm bộ phát, thiết bị nâng cấp vùng phủ được FPT khuyên dùng</li>
+                <li>
+                  Đảo port cắm Lan trên modem, switch nếu thiết bị lên hình khả năng lỗi port, lỗi 
+                  modem, switch, …
+                </li>
+                <li>HĐ ONNET: Tiến hành bảo hành thiết bị modem, switch của FPT theo qui định. 
+                  Nếu thiết bị router, switch…không phải của FPT tư vấn KH bảo hành thiết bị
+                </li>
+                <li>HĐ OFFNET: Nếu lỗi modem tư vấn KH liên hệ ISP để bào hành thiết bị. Lỗi router, 
+                  switch tư vấn KH bảo hành thiết bị             
+                </li>
+                <li>Bấm lại đầu LAN            
+                </li>
+                <li>Kiểm tra từ phía BDA có lỗi server không. Nếu có thông tin sự cố cho KH          
+                </li>
+                <li>Kiểm tra DHCP có cấp phát địa chỉ IP trong modem, router không</li>
+                <li>Khởi động lại modem, router</li>
+              </ul>
+              
+            </div>
+        </div>
+      </div>
+
+      <div id="cause64" class="content-section">
+        <h2>FPT Camera xem bị đứng hình, trễ hình trên APP</h2>
+        <div class="two-column">
+            <div class="problem-details">
+              <h3>Nguyên nhân:</h3>
+              <ul>
+                <li>
+                Do băng thông đường truyền đáp ứng không đủ
+                </li>
+                <li>
+                Do điện thoại KH cấu hình không đáp ứng đủ để 
+                  xem
+                </li>
+                <li>
+                  Do tiếp xúc cổng LAN chập chờn
+                </li>
+                <li> Khoảng cách truyền tín hiệu quá xa so với khoảng 
+                  cách truyền dẫn tối đa</li>
+              </ul>
+            </div>
+            <div class="problem-details">
+              <h3>Hướng xử lý:</h3>
+              <ul>
+                <li>Kiểm tra đèn Lan có nháy đều không, nếu không tiến hành bấm lại cổng Lan hoặc thay thế đường 
+                  dây</li>
+                <li>
+                  Đối với Camera Wifi đo tín hiệu sóng Wifi có đảm bảo ở khu vực để kết nối tốt không (dùng phần 
+mềm wifi analyzer) Nếu cường độ không đảm bảo thì tối ưu lại wifi cho KH, tư vấn KH chuyển vị trí 
+lắp phù hợp (vẫn đảm bảo quan sát khu vực yêu cầu của KH) hoặc lắp thêm bộ phát, thiết bị nâng 
+cấp vùng phủ được FPT khuyên dùng
+                </li>
+                <li>Kiểm tra điện thoại KH, phần cứng bộ nhớ RAM có đảm bảo để xem Camera ổn đinh không. Tư vấn 
+                  khách hàng nâng cấp nếu cần thiết
+                </li>
+                <li>Đo băng thông đường truyền của KH     
+                  <ul>
+                    <li>Hợp đồng ONNET: Kiểm tra suy hao đường truyền (với ADSL, SNR>10dB|| PON, ONURX≥ -23.5.) 
+                      Nếu suy hao đảm bảo, kiểm tra đường truyền như 1 case Internet thông thường</li>
+                    <li> Hợp đồng OFFNET: Kiểm tra tách Camera đo băng thông nhà khách hàng. Trung bình xem 1 mắt 
+                      Camera sẽ chiếm khoảng 6Mbps</li>
+                  </ul>        
+                </li>
+                <li>Nếu băng thông nhà KH đo không đủ đáp ứng băng thông khi tách Camera, tư vấn KH nâng băng 
+                  thông hoặc liên hệ ISP để xử lý đường truyền            
+                </li>
+                <li>Nếu băng thông KH không đảm bảo xem chất lượng FULL HD có thể hướng dẫn KH xem ở độ phân 
+                  giải thấp hơn          
+                </li>
+                <li> Nếu tín hiệu đường dây và băng thông KH vẫn đảm bảo: Tiến hành thay Camera khác để test, bảo hảnh 
+                  thiết bị theo chính sách
+                </li>
+              </ul>
+              
+            </div>
+        </div>
+      </div>
+
+      <div id="cause65" class="content-section">
+        <h2>FPT Camera không đăng nhập được, dữ liệu được đẩy lên Cloud nhưng không xem được trên App</h2>
+        <div class="two-column">
+            <div class="problem-details">
+              <h3>Nguyên nhân:</h3>
+              <ul>
+                <li>
+                  Lỗi App
+                </li>
+                <li>
+                  KH đăng nhập sai user, password
+                </li>
+                <li>
+                  Lỗi từ phía server BDA
+                </li>
+              </ul>
+            </div>
+            <div class="problem-details">
+              <h3>Hướng xử lý:</h3>
+              <ul>
+                <li>Kiểm tra có lỗi server từ BDA không</li>
+                <li>
+                  Xóa App đi cài lại trên điện thoại Khách hàng
+                </li>
+                <li>Reset lại mật khẩu đăng nhập
+                </li>
+              </ul>
+              
+            </div>
+        </div>
+      </div>
+
+      <div id="cause66" class="content-section">
+        <h2>FPT Camera xem trực tiếp được nhưng xem lại không được</h2>
+        <div class="two-column">
+            <div class="problem-details">
+              <h3>Nguyên nhân:</h3>
+              <ul>
+                <li>
+                  Lỗi từ phía server BDA
+                </li>
+              </ul>
+            </div>
+            <div class="problem-details">
+              <h3>Hướng xử lý:</h3>
+              <ul>
+                <li>Kiểm tra có lỗi server từ BDA không
+                </li>
+
+              </ul>
+              
+            </div>
+        </div>
+      </div>
+
+      <div id="cause67" class="content-section">
+        <h2>Không hiện kết quả đếm người </h2>
+        <div class="two-column">
+            <div class="problem-details">
+              <h3>Nguyên nhân:</h3>
+              <ul>
+                <li>
+                  Camera bị thay đổi góc hoặc góc quan sát bị che 
+khuất so với ban đầu
+                </li>
+                <li>
+                  Camera mất kết nối internet
+                </li>
+                <li>
+                  Server FSS không gửi video sang CADS
+                </li>
+              </ul>
+            </div>
+            <div class="problem-details">
+              <h3>Hướng xử lý:</h3>
+              <ul>
+                <li>Kiểm tra điều chỉnh loại góc camera hoặc loại bỏ vật cản
+                </li>
+                <li>Kiểm tra đường truyền internet và kết nối từ camera tới 
+                  modem/switch/AP
+                </li>
+                <li>Kiểm tra lại server FSS
+                </li>
+              </ul>
+              
+            </div>
+        </div>
+      </div>
+
+      <div id="cause68" class="content-section">
+        <h2> Kết quả đếm bị sai, tỷ lệ đúng &lt;85% </h2>
+        <div class="two-column">
+            <div class="problem-details">
+              <h3>Nguyên nhân:</h3>
+              <ul>
+                <li>
+                  Camera bị thay đổi góc hoặc góc quan sát bị che 
+khuất so với ban đầu
+                </li>
+                <li>
+                  Camera kết nối internet chập chờn.
+                </li>
+                <li>
+                  Chất lượng hình ảnh từ camera kém
+                </li>
+                <li>
+                  Lỗi model đếm người từ CADS
+                </li>
+              </ul>
+            </div>
+            <div class="problem-details">
+              <h3>Hướng xử lý:</h3>
+              <ul>
+                <li>Kiểm tra điều chỉnh loại góc camera hoặc loại bỏ vật cản
+                </li>
+                <li>Kiểm tra đường truyền internet và kết nối từ camera tới 
+                  modem/switch/AP
+                </li>
+                <li> Kiểm tra chất lượng camera
+
+                </li>
+              </ul>
+              
+            </div>
+        </div>
+      </div>
+
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -6,7 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const causeMenus = document.querySelectorAll('.causes-menu');
     
+    const leftpanel = document.querySelectorAll('.left-panel');
+    
+    leftpanel.forEach(leftpanel => leftpanel.style.display = 'none');
+    
     sections.forEach(section => section.style.display = 'none');
+    // leftpanel.forEach(leftpanel => leftpanel.style.display = 'none');
     causeMenus.forEach(menu => menu.style.display = 'none');
     
     // Ẩn tất cả submenu ban đầu
@@ -29,12 +34,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 const selectedSection = document.getElementById(sectionId);
                 const thumbnail = document.querySelector('.content .img');
                 const isVisible = selectedSection && selectedSection.style.display === 'block';
+                const leftpanel = document.querySelector('.left-panel');
+                const rightPanel = document.querySelector('.right-panel');
                 // console.log(isVisible)
 
                 // Đóng tab nếu nó đang mở
                 if (isVisible) {
                     selectedSection.style.display = 'none';
                     thumbnail.style.display = 'block'; 
+                    leftpanel.style.display = 'none';
+                    rightPanel.style.display = 'none';
+                    
                     // Ẩn tất cả causes menu trước
                     causeMenus.forEach(menu => menu.style.display = 'none');
                 } else {
@@ -80,23 +90,70 @@ document.addEventListener('DOMContentLoaded', function() {
 function showContent(sectionId) {
     const thumbnail = document.querySelector('.content .img');
     const sections = document.querySelectorAll('.content-section');
-    sections.forEach(section => {
-        section.style.display = 'none';
-         
-    });
+    const rightPanel = document.querySelector('.right-panel');
+    const leftPanel = document.querySelector('.left-panel');
     
+    sections.forEach(section => {
+        if (section.id !== "wifi-slow") {
+            section.style.display = 'none';
+            
+        }
+        
+    });
+     
     const selectedSection = document.getElementById(sectionId);
     if (selectedSection) {
         console.log('Section found:', sectionId);
-        selectedSection.style.display = 'block';
+        // selectedSection.style.display = 'block';
+        const isVisible = selectedSection.style.display === 'block';
+
+        const rightSections = document.querySelectorAll('.right-panel .content-section');
+        rightSections.forEach(section => section.style.display = 'none');
+    selectedSection.style.display = isVisible ? 'none' : 'block';
+    // leftpanel.style.width = '30%'
+    // leftpanel.style.display =  'block';
+    // // if(sections.style.display === 'block')
+        
+    // rightPanel.style.width = '70%'
+    // rightPanel.style.display = 'block';
+
+    if (sectionId === 'cause1' && !isVisible) {
+        leftPanel.style.width = '30%';
+        rightPanel.style.width = '70%';
+        rightPanel.style.display = 'block';
+    } else {
+        leftPanel.style.width = '100%'; // Mặc định khi không có cause1
+        rightPanel.style.display = 'none';
+    }
+    leftPanel.style.display = 'block';
     } else {
         console.error('Section not found:', sectionId);
+        
     }
     
     if (thumbnail) {
         thumbnail.style.display = 'none';
     }
 
-
-    
     }
+    // function showContent(sectionId) {
+    //     const rightPanel = document.querySelector('.right-panel');
+    //     const selectedSection = document.getElementById(sectionId);
+    
+    //     if (selectedSection) {
+    //         // Kiểm tra trạng thái hiển thị hiện tại
+    //         const isVisible = selectedSection.style.display === 'block';
+    
+    //         // Ẩn tất cả nội dung trước khi hiển thị mục mới
+    //         const sections = document.querySelectorAll('.right-panel .content-section');
+    //         sections.forEach(section => section.style.display = 'none');
+    //         // Nếu nội dung đang hiển thị, ẩn nó. Ngược lại, hiển thị
+            
+    //         selectedSection.style.display = isVisible ? 'none' : 'block';
+    
+    //         // Đảm bảo right-panel luôn hiển thị
+    //         rightPanel.style.display = 'block';
+    //     }
+    // }
+    
+

@@ -32,6 +32,8 @@ body {
 .content {
     margin-left: 300px;
     padding: 20px;
+    display:flex;
+    width: 100%;
     flex: 1;
     background-color: #ede8e8;
     
@@ -492,9 +494,16 @@ img {
         /* Đặt chiều cao cụ thể */
     
 }
-.content .img img {
-    width: 35%;
+.content .img  {
+    width: 30%;
     opacity: 0.2;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.content .img img {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -584,5 +593,23 @@ img {
 {
     text-align: justify;
     font-size: 13px;
+}
+
+/* Fixed */
+
+
+
+.left-panel {
+    /* width: 30%; */
+    background: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+
+}
+
+.right-panel {
+    /* width: 70%; */
+    padding: 20px;
+    display: none;
 }
 
