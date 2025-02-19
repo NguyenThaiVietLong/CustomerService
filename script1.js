@@ -39,3 +39,4 @@ function showContent(sectionId) {
         rightPanel.style.display = 'block';
     }
 }
+mediumZoom('.zoomable');

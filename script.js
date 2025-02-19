@@ -184,3 +184,4 @@ function toggleExpand() {
 
 // Gắn sự kiện click cho nút toggle
 document.getElementById('toggle-btn').addEventListener('click', toggleExpand);
+mediumZoom('.zoomable');
