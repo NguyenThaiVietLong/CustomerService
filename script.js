@@ -134,13 +134,13 @@ function showError(sectionId) {
 
 }
 }
+// 
+
 function toggleExpand() {
-    // Lấy tất cả content-section1 và content-section
     const allContent1 = document.querySelectorAll('.content-section1');
     const allContent = document.querySelectorAll('.content-section');
     const button = document.getElementById('toggle-btn');
 
-    // Xác định phần đang hiển thị
     const visibleContent1 = Array.from(allContent1).find(el => el.style.display !== 'none');
     let visibleContent = Array.from(allContent).find(el => el.style.display !== 'none');
 
@@ -149,39 +149,32 @@ function toggleExpand() {
         return;
     }
 
-    // Kiểm tra trạng thái hiện tại để toggle
-    if (visibleContent && visibleContent.style.display !== 'none') {
-        // Ẩn content-section, mở rộng content-section1
-        visibleContent.style.display = 'none';
-        visibleContent1.style.width = '100%';
-        button.textContent = '⇋'; 
-        button.dataset.expanded = "true"; // Lưu trạng thái mở rộng
-    } else {
-        // Kiểm tra trạng thái trước đó
-        if (button.dataset.expanded === "true") {
-            console.log("Thu nhỏ content-section1 và hiển thị lại content-section");
-        
-            // Nếu visibleContent bị undefined, tìm lại phần content-section bị ẩn
-            if (!visibleContent) {
-                visibleContent = Array.from(allContent).find(el => el.style.display === 'none');
-            }
-        
-            // Kiểm tra nếu tìm thấy visibleContent, thì hiển thị lại nó
-            if (visibleContent) {
-                visibleContent.style.display = 'block';
-                visibleContent.style.width = '70%';
-              
-            } 
-        
-            // Thu nhỏ content-section1
-            visibleContent1.style.width = '50%';
-            button.textContent = '⇆'; 
-            button.dataset.expanded = "false"; // Lưu trạng thái thu nhỏ
+    if (button.dataset.expanded === "false" || !button.dataset.expanded) {
+        // Ẩn phần đang hiển thị và lưu lại ID của nó
+        if (visibleContent) {
+            visibleContent.style.display = 'none';
+            button.dataset.lastHidden = visibleContent.id; // Lưu ID của phần bị ẩn
         }
-        
+
+        visibleContent1.style.width = '100%';
+        button.textContent = '⇋';
+        button.dataset.expanded = "true";
+    } else {
+        // Lấy lại phần content-section đã bị ẩn trước đó
+        let lastHiddenId = button.dataset.lastHidden;
+        let lastHiddenContent = document.getElementById(lastHiddenId);
+
+        if (lastHiddenContent) {
+            lastHiddenContent.style.display = 'block';
+            lastHiddenContent.style.width = '50%';
+        }
+
+        visibleContent1.style.width = '50%';
+        button.textContent = '⇆';
+        button.dataset.expanded = "false";
     }
 }
 
-// Gắn sự kiện click cho nút toggle
 document.getElementById('toggle-btn').addEventListener('click', toggleExpand);
+
 mediumZoom('.zoomable');
