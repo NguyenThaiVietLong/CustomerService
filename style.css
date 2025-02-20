@@ -633,3 +633,86 @@ img {
     transition: width 0.4s ease-in-out;
 }
 
+/* Base styles for mobile first approach */
+:root {
+    --sidebar-width: 300px;
+    --content-padding: 20px;
+  }
+  
+  /* Mobile first base styles */
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 100%;
+    position: static;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .content {
+    margin-left: 0;
+    padding: var(--content-padding);
+    width: 100%;
+  }
+  
+  /* Tablet breakpoint */
+  @media screen and (min-width: 768px) {
+    .container {
+      flex-direction: row;
+    }
+  
+    .sidebar {
+      width: var(--sidebar-width);
+      position: fixed;
+      height: 100vh;
+      overflow-y: auto;
+    }
+  
+    .content {
+      margin-left: var(--sidebar-width);
+      width: calc(100% - var(--sidebar-width));
+    }
+    
+    .content-section, .content-section1 {
+      padding: 20px;
+    }
+  }
+  
+  /* Desktop breakpoint */
+  @media screen and (min-width: 1024px) {
+    .content-section.shrink {
+      width: 30%;
+    }
+    
+    .content-section.expand {
+      width: 70%;
+    }
+  
+    .content21 {
+      flex-direction: row;
+      padding: 10px 80px;
+    }
+  }
+  
+  /* Large desktop breakpoint */
+ /* Add these styles for mobile menu button */
+#mobile-menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background-color: #365DFE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none; /* Hidden by default, shown on mobile */
+}
+
+/* M
