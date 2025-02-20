@@ -186,6 +186,7 @@ section {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     margin-left: 10px;
+    height: fit-content;
 }
 
 
@@ -619,6 +620,7 @@ img {
     font-size: 18px;
     text-align: center;
     margin: 0 10px;
+    flex-shrink: 0;
 }
 
 .toggle-btn:hover {
