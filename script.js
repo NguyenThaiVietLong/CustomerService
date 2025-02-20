@@ -130,7 +130,7 @@ function showError(sectionId) {
     if (selectedSection) {
         // parentSelection.style.width = '30%';
         selectedSection.style.display = 'block';
-        selectedSection.style.width = '70%';
+        selectedSection.style.width = '50%';
 
 }
 }
@@ -178,3 +178,5 @@ function toggleExpand() {
 document.getElementById('toggle-btn').addEventListener('click', toggleExpand);
 
 mediumZoom('.zoomable');
+
+// Add responsive handling
