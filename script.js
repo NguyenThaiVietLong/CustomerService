@@ -127,10 +127,11 @@ function showError(sectionId) {
     }); 
     // const parentSelection = document.getElementById('wifi-slow');
     const selectedSection = document.getElementById(sectionId);
+    
     if (selectedSection) {
         // parentSelection.style.width = '30%';
         selectedSection.style.display = 'block';
-        selectedSection.style.width = '50%';
+        selectedSection.style.width = '100%';
 
 }
 }
