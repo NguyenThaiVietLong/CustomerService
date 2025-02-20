@@ -92,6 +92,7 @@ function showContent(sectionId) {
     const sections = document.querySelectorAll('.content-section');
     sections.forEach(section => {
         section.style.display = 'none';
+        section.style.width = '100%';
          
     });
     const sections1 = document.querySelectorAll('.content-section1');
@@ -100,8 +101,8 @@ function showContent(sectionId) {
     
     
 
-    const parentSelection = document.getElementById('wifi-slow');
-    parentSelection.style.width = '100%';
+    // const parentSelection = document.getElementById('wifi-slow');
+    // parentSelection.style.width = '100%';
     
     const selectedSection = document.getElementById(sectionId);
 
