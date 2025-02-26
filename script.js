@@ -101,8 +101,7 @@ function showContent(sectionId) {
     
     
 
-    // const parentSelection = document.getElementById('wifi-slow');
-    // parentSelection.style.width = '100%';
+    
     
     const selectedSection = document.getElementById(sectionId);
 
