@@ -169,7 +169,7 @@ function toggleExpand() {
             lastHiddenContent.style.width = '50%';
         }
 
-        visibleContent1.style.width = '50%';
+        visibleContent1.style.width = '100%';
         button.textContent = '⇆';
         button.dataset.expanded = "false";
     }
